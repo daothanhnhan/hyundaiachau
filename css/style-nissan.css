@@ -1,0 +1,3517 @@
+@charset "UTF-8";
+/*Định nghĩa màu cho website*/
+/*Định nghĩa font-family cho website*/
+@import url(../plugin/fonts/roboto/roboto.css);
+/*Định nghĩa font-size cho website*/
+h1 {
+  font-size: 24px;
+  line-height: 1.5; }
+
+h2 {
+  font-size: 22px;
+  line-height: 1.5; }
+
+h3 {
+  font-size: 20px;
+  line-height: 1.5; }
+
+h4 {
+  font-size: 18px;
+  line-height: 1.5; }
+
+h5 {
+  font-size: 16px;
+  line-height: 1.5; }
+
+h6 {
+  font-size: 14px;
+  line-height: 1.5; }
+
+p {
+  line-height: 1.5; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  font-family: "Roboto";
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: ''; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a:hover {
+  text-decoration: none; }
+
+.clear-padding {
+  padding: 0; }
+
+.clear-padding-left {
+  padding-left: 0; }
+
+.clear-padding-right {
+  padding-right: 0; }
+
+.padding-5px {
+  padding: 5px; }
+
+.gb-divider {
+  width: 100%;
+  border-top-width: 1px;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-style: dashed;
+  border-color: #E0E0E0;
+  overflow: hidden;
+  margin: 30px 0; }
+
+/*header*/
+.gb-top-header_nissan {
+  background: #f1f1f1; }
+  .gb-top-header_nissan .gb-top-header_nissan-left ul li {
+    display: inline-block;
+    color: #28377A;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 15px; }
+    .gb-top-header_nissan .gb-top-header_nissan-left ul li i {
+      color: #28377A;
+      font-size: 20px;
+      margin-right: 5px; }
+    @media screen and (max-width: 600px) {
+      .gb-top-header_nissan .gb-top-header_nissan-left ul li {
+        font-size: 10px;
+        padding: 15px 10px; } }
+  .gb-top-header_nissan-right {
+    text-align: right; }
+    @media screen and (max-width: 991px) {
+      .gb-top-header_nissan-right {
+        display: none; } }
+    .gb-top-header_nissan-right ul li {
+      display: inline-block; }
+      .gb-top-header_nissan-right ul li a {
+        display: block;
+        color: #000;
+        font-weight: 700;
+        font-size: 12px;
+        text-transform: uppercase;
+        padding: 15px;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
+        .gb-top-header_nissan-right ul li a:hover {
+          color: #e57632; }
+        .gb-top-header_nissan-right ul li a i {
+          margin-right: 5px; }
+
+.gb-header-between_nissan {
+  position: relative;
+  width: 100%;
+  z-index: 9;
+  background: #28377A; }
+  @media screen and (max-width: 991px) {
+    .gb-header-between_nissan {
+      position: relative; } }
+  .gb-header-between_nissan .logo_nissan {
+    padding: 10px 0; }
+    @media screen and (max-width: 991px) {
+      .gb-header-between_nissan .logo_nissan {
+        padding: 30px 0; } }
+    .gb-header-between_nissan .logo_nissan a {
+      display: block; }
+      .gb-header-between_nissan .logo_nissan a img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto; }
+  @media screen and (max-width: 991px) {
+    .gb-header-between_nissan .gb-header-between_nissan-between {
+      display: none; } }
+  .gb-header-between_nissan .gb-header-between_nissan-between ul li {
+    display: inline-block;
+    padding: 10px 15px; }
+    .gb-header-between_nissan .gb-header-between_nissan-between ul li a {
+      display: block;
+      color: #969696;
+      font-weight: 700;
+      font-size: 12px;
+      text-transform: uppercase; }
+      .gb-header-between_nissan .gb-header-between_nissan-between ul li a i {
+        padding-right: 5px;
+        color: #28377A; }
+
+.gb-header-between_nissan-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 17px; }
+  @media screen and (max-width: 991px) {
+    .gb-header-between_nissan-right {
+      display: none; } }
+  .gb-header-between_nissan-right i {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    background: #28377A; }
+  .gb-header-between_nissan-right span {
+    background: #ee0717;
+    border: none;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 13px;
+    border-radius: 0;
+    padding: 0 20px;
+    color: #fff;
+    margin-left: 5px; }
+
+.gb-header-bottom_nissan {
+  border-top: 1px solid #e4e4e4; }
+  @media screen and (max-width: 991px) {
+    .gb-header-bottom_nissan {
+      display: none; } }
+
+/*menu*/
+/*MENU DESKTOP*/
+.bookonline a {
+  border: 1px solid #28377A !important;
+  padding: 15px 10px !important;
+  background: #28377A;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+  .bookonline a:hover {
+    border-color: #e57632 !important;
+    background: #e57632; }
+
+.gb-main-menu {
+  position: relative; }
+  .gb-main-menu .main-menu {
+    position: relative; }
+  .gb-main-menu .cssmenu,
+  .gb-main-menu .cssmenu ul,
+  .gb-main-menu .cssmenu ul li,
+  .gb-main-menu .cssmenu ul li a,
+  .gb-main-menu .cssmenu #menu-button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    line-height: 1;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .gb-main-menu .cssmenu:after,
+  .gb-main-menu .cssmenu > ul:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0; }
+  .gb-main-menu .cssmenu #menu-button {
+    display: none; }
+  .gb-main-menu .cssmenu {
+    width: auto;
+    line-height: 1; }
+    @media screen and (max-width: 991px) {
+      .gb-main-menu .cssmenu {
+        display: none; } }
+  .gb-main-menu .cssmenu > ul > li {
+    display: inline-block; }
+  .gb-main-menu .cssmenu.align-center > ul {
+    font-size: 0;
+    text-align: center; }
+  .gb-main-menu .cssmenu.align-center > ul > li {
+    display: inline-block;
+    float: none; }
+  .gb-main-menu .cssmenu.align-center ul .sub-menu {
+    text-align: left; }
+  .gb-main-menu .cssmenu.align-right > ul > li {
+    float: right; }
+  .gb-main-menu .cssmenu.align-right ul .sub-menu {
+    text-align: right; }
+  .gb-main-menu .cssmenu > ul > li > a {
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #fff;
+    padding: 18px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: color .2s ease;
+    -o-transition: color .2s ease;
+    transition: color .2s ease; }
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      .gb-main-menu .cssmenu > ul > li > a {
+        font-size: 11px;
+        padding: 20px 10px; } }
+  .gb-main-menu .cssmenu > ul > li:hover > a,
+  .gb-main-menu .cssmenu > ul > li.active > a {
+    color: #fff; }
+  .gb-main-menu .cssmenu > ul > li.has-sub > a:hover:before {
+    content: '';
+    display: block; }
+  .gb-main-menu .cssmenu > ul > li.has-sub:hover > a::after {
+    border-color: #fff; }
+  .gb-main-menu .cssmenu ul .sub-menu {
+    position: absolute;
+    left: -9999px;
+    z-index: 2;
+    background: #ffffff;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); }
+  .gb-main-menu .cssmenu li:hover > .sub-menu {
+    left: 0; }
+  .gb-main-menu .cssmenu.align-right li:hover > .sub-menu {
+    right: 0; }
+  .gb-main-menu .cssmenu ul ul ul {
+    margin-left: 100%;
+    top: 0;
+    background: #ffffff;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); }
+  .gb-main-menu .cssmenu ul ul ul li a {
+    color: #666666;
+    border-top: 1px solid #e0e0e0; }
+  .gb-main-menu .cssmenu.align-right ul ul ul {
+    margin-left: 0;
+    margin-right: 100%; }
+  .gb-main-menu .cssmenu ul ul li {
+    -webkit-transition: height .2s ease;
+    -o-transition: height .2s ease;
+    transition: height .2s ease; }
+  .gb-main-menu .cssmenu ul ul li a {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #666666;
+    line-height: 24px;
+    background: transparent;
+    text-decoration: none;
+    -webkit-transition: color .2s ease;
+    -o-transition: color .2s ease;
+    transition: color .2s ease; }
+  .gb-main-menu .cssmenu ul ul li:first-child a {
+    border-top: none; }
+  .gb-main-menu .cssmenu ul ul li:hover > a,
+  .gb-main-menu .cssmenu ul ul li a:hover {
+    color: #28377A;
+    text-decoration: underline; }
+  .gb-main-menu .cssmenu ul ul li.has-sub > a::after {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 4px;
+    height: 4px;
+    border-bottom: 1px solid #222;
+    border-right: 1px solid #222;
+    content: "";
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transition: border-color 0.2s ease;
+    -o-transition: border-color 0.2s ease;
+    transition: border-color 0.2s ease; }
+  .gb-main-menu .cssmenu.align-right ul ul li.has-sub > a::after {
+    right: auto;
+    left: 10px;
+    border-bottom: 0;
+    border-right: 0;
+    border-top: 1px solid #dddddd;
+    border-left: 1px solid #dddddd; }
+  .gb-main-menu .cssmenu ul ul li.has-sub:hover > a::after {
+    border-color: #fff; }
+  .gb-main-menu .cssmenu ul li:hover .gb-mega-menu {
+    display: block; }
+  .gb-main-menu .cssmenu ul li .gb-mega-menu {
+    position: absolute;
+    display: none; }
+    @media screen and (min-width: 992px) {
+      .gb-main-menu .cssmenu ul li .gb-mega-menu {
+        width: 940px;
+        left: -257px; } }
+    @media screen and (min-width: 1200px) {
+      .gb-main-menu .cssmenu ul li .gb-mega-menu {
+        width: 1140px;
+        left: -307px; } }
+    .gb-main-menu .cssmenu ul li .gb-mega-menu .box_image_sub_menu {
+      height: 270px;
+      overflow: hidden; }
+      .gb-main-menu .cssmenu ul li .gb-mega-menu .box_image_sub_menu img {
+        width: 100%;
+        height: auto; }
+    .gb-main-menu .cssmenu ul li .gb-mega-menu h3 {
+      font-weight: 600;
+      font-size: 18px;
+      color: #28377A;
+      line-height: 1.5;
+      padding: 10px 20px; }
+    .gb-main-menu .cssmenu ul li .gb-mega-menu ul {
+      position: relative;
+      left: initial;
+      margin-left: initial;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+      .gb-main-menu .cssmenu ul li .gb-mega-menu ul li a {
+        padding: 10px 20px;
+        border: none; }
+  .gb-main-menu .cssmenu .sub-menu {
+    padding: 20px;
+    width: 100%; }
+    .gb-main-menu .cssmenu .sub-menu h3 {
+      font-weight: 900;
+      font-size: 14px;
+      display: inline-block;
+      text-transform: uppercase;
+      border-bottom: 2px solid #d3d3d3;
+      padding-bottom: 3px;
+      margin-bottom: 15px; }
+    .gb-main-menu .cssmenu .sub-menu img {
+      width: 100%;
+      height: auto; }
+    .gb-main-menu .cssmenu .sub-menu .sub-menu-item .sub-menu-item-img {
+      height: 110px;
+      overflow: hidden;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .gb-main-menu .cssmenu .sub-menu .sub-menu-item img {
+      width: 100%;
+      height: auto; }
+    .gb-main-menu .cssmenu .sub-menu .sub-menu-item span {
+      font-size: 14px;
+      color: #000; }
+
+/*Menu mobiles*/
+.mobile-nav .navbar-toggle {
+  z-index: 999999;
+  top: 21px; }
+
+.mobile-nav [class^="icon-"]:before, .mobile-nav [class*=" icon-"]:before {
+  width: auto !important;
+  margin-right: 0 !important; }
+
+.mobile-nav #cssmenu,
+.mobile-nav #cssmenu ul,
+.mobile-nav #cssmenu ul li,
+.mobile-nav #cssmenu ul li a,
+.mobile-nav #cssmenu #menu-button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.mobile-nav #cssmenu > ul > li > a {
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: left;
+  color: #ffffff;
+  padding: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease; }
+
+.mobile-nav #cssmenu ul ul li a {
+  display: block;
+  font-size: 14px;
+  text-align: left;
+  color: #222222;
+  padding: 17px 20px;
+  min-width: 240px;
+  background: transparent;
+  border-top: 1px solid #e0e0e0;
+  text-decoration: none;
+  -webkit-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease; }
+
+@media screen and (max-width: 991px) {
+  .mobile-nav #cssmenu {
+    width: 100%;
+    background: #22292d;
+    display: none;
+    position: absolute;
+    min-height: 100%;
+    z-index: 999999999; }
+  .mobile-nav .uni-icons-close {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: solid 1px #333333;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 35px; }
+    .mobile-nav .uni-icons-close i {
+      font-family: FontAwesome;
+      font-size: 15px;
+      line-height: 2.93;
+      text-align: center;
+      color: #aeaeae; }
+  .mobile-nav #cssmenu ul {
+    width: 100%;
+    display: none;
+    padding: 0 30px;
+    background: transparent; }
+  .mobile-nav #cssmenu ul ul {
+    background: transparent;
+    padding-right: 0; }
+  .mobile-nav #cssmenu.align-center > ul,
+  .mobile-nav #cssmenu.align-right ul ul {
+    text-align: left; }
+  .mobile-nav #cssmenu ul li,
+  .mobile-nav #cssmenu ul ul li,
+  .mobile-nav #cssmenu ul li:hover > ul > li {
+    width: 100%;
+    height: auto;
+    border-top: 1px solid rgba(120, 120, 120, 0.15); }
+  .mobile-nav #cssmenu ul ul li,
+  .mobile-nav #cssmenu ul li:hover > ul > li {
+    border-top: 1px solid transparent; }
+  .mobile-nav #cssmenu li:hover > ul {
+    border-top: 1px solid rgba(120, 120, 120, 0.15); }
+  .mobile-nav #cssmenu ul li a,
+  .mobile-nav #cssmenu ul ul li a {
+    width: 100%;
+    padding: 11px 0;
+    text-transform: inherit; }
+  .mobile-nav #cssmenu > ul > li,
+  .mobile-nav #cssmenu.align-center > ul > li,
+  .mobile-nav #cssmenu.align-right > ul > li {
+    float: none;
+    display: block; }
+  .mobile-nav #cssmenu ul ul li:last-child a {
+    border-bottom: none; }
+  .mobile-nav #cssmenu ul ul li a {
+    display: block;
+    line-height: 24px;
+    font-size: 14px;
+    color: #aeaeae;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(120, 120, 120, 0.15); }
+  .mobile-nav #cssmenu ul ul li:hover > a,
+  .mobile-nav #cssmenu ul ul li a:hover {
+    color: #28377A; }
+  .mobile-nav .home-icon {
+    background: transparent; }
+  .mobile-nav #cssmenu > ul > li:hover > a,
+  .mobile-nav #cssmenu > ul > li.active > a {
+    color: #28377A !important; }
+  .mobile-nav #cssmenu ul ul ul li a {
+    padding-left: 0;
+    border-top: none; }
+  .mobile-nav #cssmenu ul ul,
+  .mobile-nav #cssmenu ul ul ul {
+    position: relative;
+    left: 0;
+    right: auto;
+    width: 100%;
+    margin: 0;
+    border-top: 1px solid rgba(120, 120, 120, 0.15); }
+  .mobile-nav #cssmenu > ul > li.has-sub > a::after,
+  .mobile-nav #cssmenu ul ul li.has-sub > a::after {
+    display: none; }
+  .mobile-nav #menu-line {
+    display: none; }
+  .mobile-nav #cssmenu #menu-button {
+    display: block;
+    padding: 20px;
+    color: #000000;
+    cursor: pointer; }
+  .mobile-nav #cssmenu .submenu-button {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: 0;
+    display: block;
+    height: 42px;
+    width: 42px;
+    cursor: pointer;
+    border-left: 1px solid rgba(120, 120, 120, 0.15); }
+  .mobile-nav #cssmenu .submenu-button::after {
+    content: '\f107';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: block;
+    font-family: FontAwesome;
+    color: #fff;
+    z-index: 99; }
+  .mobile-nav #cssmenu .submenu-button.active::before {
+    content: '\f106';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: block;
+    font-family: FontAwesome;
+    color: #28377A;
+    z-index: 99; }
+  .mobile-nav #cssmenu ul li ul li .submenu-button::after {
+    content: '';
+    position: absolute;
+    top: 21px;
+    left: 20px;
+    display: block;
+    width: 1px;
+    height: 11px;
+    background: #fff;
+    z-index: 99; }
+  .mobile-nav #cssmenu ul li ul li .submenu-button::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 21px;
+    display: block;
+    width: 11px;
+    height: 1px;
+    background: #fff;
+    z-index: 99; }
+  .mobile-nav #cssmenu ul li ul li .submenu-button.active::before {
+    content: '';
+    position: absolute;
+    left: 21px;
+    top: 21px;
+    display: block;
+    width: 11px;
+    height: 1px;
+    background: #28377A;
+    z-index: 99; }
+  .mobile-nav #cssmenu .submenu-button.submenu-opened:after {
+    display: none; }
+  .mobile-nav .navbar-toggle .icon-bar {
+    display: inline-block; }
+  .mobile-nav .menu-mobile-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e57632;
+    position: absolute;
+    color: #e57632;
+    top: 75px;
+    right: 15px;
+    z-index: 9999999; } }
+
+.gb-sidebar-category_nissan {
+  position: relative; }
+  @media screen and (max-width: 991px) {
+    .gb-sidebar-category_nissan {
+      display: none; } }
+  .gb-sidebar-category_nissan:hover .cssmenu {
+    display: block; }
+  .gb-sidebar-category_nissan .title_Module_Bar_5_nissan {
+    position: relative;
+    padding: 20px 15px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #28377A; }
+    .gb-sidebar-category_nissan .title_Module_Bar_5_nissan i {
+      position: absolute;
+      right: 0;
+      top: 10px;
+      background: #28377A;
+      margin: 0;
+      padding: 10px 15px 10px 15px;
+      font-size: 16px;
+      color: #fff; }
+  .gb-sidebar-category_nissan .main-menu {
+    position: relative; }
+  .gb-sidebar-category_nissan .cssmenu {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    background: #fff;
+    display: none; }
+  .gb-sidebar-category_nissan .cssmenu ul,
+  .gb-sidebar-category_nissan .cssmenu ul li,
+  .gb-sidebar-category_nissan .cssmenu ul li a,
+  .gb-sidebar-category_nissan .cssmenu #menu-button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    line-height: 1;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    .gb-sidebar-category_nissan .cssmenu ul span,
+    .gb-sidebar-category_nissan .cssmenu ul li span,
+    .gb-sidebar-category_nissan .cssmenu ul li a span,
+    .gb-sidebar-category_nissan .cssmenu #menu-button span {
+      margin-right: 10px; }
+      .gb-sidebar-category_nissan .cssmenu ul span img,
+      .gb-sidebar-category_nissan .cssmenu ul li span img,
+      .gb-sidebar-category_nissan .cssmenu ul li a span img,
+      .gb-sidebar-category_nissan .cssmenu #menu-button span img {
+        width: 20px; }
+  .gb-sidebar-category_nissan .cssmenu {
+    border: 1px solid #dcdcdc; }
+    .gb-sidebar-category_nissan .cssmenu ul {
+      position: relative; }
+      .gb-sidebar-category_nissan .cssmenu ul li {
+        border-bottom: 1px solid #dcdcdc;
+        position: relative; }
+        .gb-sidebar-category_nissan .cssmenu ul li:last-child {
+          border-bottom: none; }
+        .gb-sidebar-category_nissan .cssmenu ul li a {
+          position: relative; }
+      .gb-sidebar-category_nissan .cssmenu ul ul .item {
+        margin-bottom: 10px; }
+        .gb-sidebar-category_nissan .cssmenu ul ul .item h3 a {
+          display: block;
+          font-weight: 600;
+          margin-bottom: 10px; }
+      .gb-sidebar-category_nissan .cssmenu ul ul ul {
+        overflow: initial; }
+      .gb-sidebar-category_nissan .cssmenu ul ul li {
+        border-bottom: none; }
+  .gb-sidebar-category_nissan .cssmenu:after,
+  .gb-sidebar-category_nissan .cssmenu > ul:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0; }
+  .gb-sidebar-category_nissan .cssmenu #menu-button {
+    display: none; }
+  .gb-sidebar-category_nissan .cssmenu {
+    line-height: 1; }
+    @media screen and (max-width: 991px) {
+      .gb-sidebar-category_nissan .cssmenu {
+        display: none; } }
+  .gb-sidebar-category_nissan .cssmenu.align-center > ul {
+    font-size: 0;
+    text-align: center; }
+  .gb-sidebar-category_nissan .cssmenu.align-center > ul > li {
+    display: inline-block;
+    float: none; }
+  .gb-sidebar-category_nissan .cssmenu.align-center ul ul {
+    text-align: left; }
+  .gb-sidebar-category_nissan .cssmenu.align-right > ul > li {
+    float: right; }
+  .gb-sidebar-category_nissan .cssmenu.align-right ul ul {
+    text-align: right; }
+  .gb-sidebar-category_nissan .cssmenu > ul > li > a {
+    font-size: 13px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333;
+    padding: 11px 20px;
+    text-decoration: none;
+    -webkit-transition: color .2s ease;
+    -o-transition: color .2s ease;
+    transition: color .2s ease; }
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      .gb-sidebar-category_nissan .cssmenu > ul > li > a {
+        font-size: 11px; } }
+  .gb-sidebar-category_nissan .cssmenu > ul > li:hover > a,
+  .gb-sidebar-category_nissan .cssmenu > ul > li.active > a {
+    color: #28377A; }
+  .gb-sidebar-category_nissan .cssmenu > ul > li.has-sub > a {
+    padding-right: 25px; }
+    .gb-sidebar-category_nissan .cssmenu > ul > li.has-sub > a:hover:before {
+      content: '';
+      display: block; }
+  .gb-sidebar-category_nissan .cssmenu > ul > li.has-sub > a::after {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    content: "\f105";
+    font-family: FontAwesome; }
+  .gb-sidebar-category_nissan .cssmenu > ul > li.has-sub:hover > a::after {
+    border-color: #3f97da; }
+  .gb-sidebar-category_nissan .cssmenu ul ul {
+    position: absolute;
+    left: -9999px;
+    z-index: 2;
+    background: #ffffff;
+    border: 1px solid #dcdcdc;
+    margin-right: 100%;
+    top: -1; }
+  .gb-sidebar-category_nissan .cssmenu li:hover > ul {
+    left: 100%;
+    position: absolute;
+    top: -1px; }
+    .gb-sidebar-category_nissan .cssmenu li:hover > ul li ul {
+      position: relative;
+      left: inherit;
+      margin-left: inherit;
+      width: auto;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border: none;
+      padding: 0 0 0 20px; }
+  .gb-sidebar-category_nissan .cssmenu.align-right li:hover > ul {
+    right: 0; }
+  .gb-sidebar-category_nissan .cssmenu ul ul ul {
+    margin-left: 100%;
+    top: 0;
+    background: #ffffff;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); }
+  .gb-sidebar-category_nissan .cssmenu ul ul ul li a {
+    color: #666666; }
+  .gb-sidebar-category_nissan .cssmenu.align-right ul ul ul {
+    margin-left: 0;
+    margin-right: 100%; }
+  .gb-sidebar-category_nissan .cssmenu ul ul li {
+    -webkit-transition: height .2s ease;
+    -o-transition: height .2s ease;
+    transition: height .2s ease; }
+  .gb-sidebar-category_nissan .cssmenu ul ul li {
+    padding: 0 10px; }
+    .gb-sidebar-category_nissan .cssmenu ul ul li a {
+      display: block;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #666666;
+      min-width: 240px;
+      background: transparent;
+      text-decoration: none;
+      line-height: 30px;
+      -webkit-transition: color .2s ease;
+      -o-transition: color .2s ease;
+      transition: color .2s ease; }
+      .gb-sidebar-category_nissan .cssmenu ul ul li a i {
+        padding-right: 10px; }
+  .gb-sidebar-category_nissan .cssmenu ul ul li:first-child a {
+    border-top: none; }
+  .gb-sidebar-category_nissan .cssmenu ul ul li:hover > a,
+  .gb-sidebar-category_nissan .cssmenu ul ul li a:hover {
+    color: #28377A;
+    background: #fff; }
+  .gb-sidebar-category_nissan .cssmenu ul ul li.has-sub > a::after {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    content: "\f105";
+    font-family: FontAwesome; }
+  .gb-sidebar-category_nissan .cssmenu.align-right ul ul li.has-sub > a::after {
+    right: auto;
+    left: 10px;
+    border-bottom: 0;
+    border-right: 0;
+    border-top: 1px solid #dddddd;
+    border-left: 1px solid #dddddd; }
+  .gb-sidebar-category_nissan .cssmenu ul ul li.has-sub:hover > a::after {
+    border-color: #fff; }
+
+/*SLIDESHOW*/
+.gb-slideshow_nissan {
+  position: relative; }
+  .gb-slideshow_nissan .owl-nav [class*=owl-] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: #28377A !important;
+    border: 3px solid #28377A;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+    .gb-slideshow_nissan .owl-nav [class*=owl-]:hover {
+      background: transparent !important;
+      border-color: #28377A; }
+  .gb-slideshow_nissan .owl-nav {
+    margin-top: 0 !important; }
+    @media screen and (max-width: 991px) and (min-width: 768px) {
+      .gb-slideshow_nissan .owl-nav {
+        top: -78px; } }
+    .gb-slideshow_nissan .owl-nav .owl-prev {
+      position: absolute;
+      top: 45%;
+      left: 20px;
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
+      display: flex !important; }
+      .gb-slideshow_nissan .owl-nav .owl-prev:before {
+        content: '\f104';
+        font-family: FontAwesome;
+        color: #fff;
+        font-size: 20px; }
+    .gb-slideshow_nissan .owl-nav .owl-next {
+      position: absolute;
+      top: 45%;
+      right: 20px;
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
+      display: flex !important; }
+      .gb-slideshow_nissan .owl-nav .owl-next:before {
+        content: '\f105';
+        font-family: FontAwesome;
+        color: #fff;
+        font-size: 20px; }
+  .gb-slideshow_nissan .owl-theme .owl-dots {
+    position: absolute;
+    bottom: 20px;
+    width: 100%; }
+  .gb-slideshow_nissan .slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    @media screen and (max-width: 600px) {
+      .gb-slideshow_nissan .slide-content {
+        display: none; } }
+    .gb-slideshow_nissan .slide-content h4 {
+      display: block;
+      font-size: 30px;
+      line-height: 54px;
+      color: #28377A;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      text-transform: uppercase; }
+      @media screen and (max-width: 767px) {
+        .gb-slideshow_nissan .slide-content h4 {
+          font-size: 18px;
+          line-height: 1;
+          margin-bottom: 10px; } }
+    .gb-slideshow_nissan .slide-content p {
+      font-size: 16px;
+      color: #fff;
+      line-height: 24px; }
+      @media screen and (max-width: 767px) {
+        .gb-slideshow_nissan .slide-content p {
+          font-size: 13px;
+          line-height: 18px; } }
+    .gb-slideshow_nissan .slide-content a {
+      display: inline-block;
+      padding: 10px 25px;
+      background: #28377A;
+      color: #fff;
+      border: 2px solid #28377A;
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-top: 30px;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+      @media screen and (max-width: 767px) {
+        .gb-slideshow_nissan .slide-content a {
+          font-size: 14px;
+          padding: 7px 25px;
+          margin-top: 10px; } }
+      .gb-slideshow_nissan .slide-content a:hover {
+        color: #28377A;
+        background: transparent; }
+
+/*social*/
+.gb-top-header_nissan-right-social ul li {
+  display: inline-block; }
+  .gb-top-header_nissan-right-social ul li a {
+    display: block;
+    color: #28377A;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 15px 10px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+    .gb-top-header_nissan-right-social ul li a:hover {
+      color: #e57632; }
+
+.footer-about-nissan-social ul li {
+  display: inline-block; }
+  .footer-about-nissan-social ul li a {
+    display: block;
+    color: #7a7a7a;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 8px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+    .footer-about-nissan-social ul li a:hover {
+      color: #28377A; }
+
+/*NEWS*/
+.gb-page-blog_nissan {
+  padding: 50px 0; }
+  .gb-page-blog_nissan .gb-news-blog_nissan-item {
+    margin-bottom: 30px; }
+    .gb-page-blog_nissan .gb-news-blog_nissan-item .gb-news-blog_nissan-item-img {
+      position: relative;
+      z-index: 5;
+      overflow: hidden;
+      height: 257px; }
+      @media screen and (max-width: 767px) {
+        .gb-page-blog_nissan .gb-news-blog_nissan-item .gb-news-blog_nissan-item-img {
+          height: auto; } }
+      .gb-page-blog_nissan .gb-news-blog_nissan-item .gb-news-blog_nissan-item-img img {
+        width: 100%;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
+      .gb-page-blog_nissan .gb-news-blog_nissan-item .gb-news-blog_nissan-item-img:hover img {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
+      .gb-page-blog_nissan .gb-news-blog_nissan-item .gb-news-blog_nissan-item-img .caption-large {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        background-color: #ffffff;
+        -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
+        min-width: 115px;
+        height: 40px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: bold;
+        color: #777777; }
+    .gb-page-blog_nissan .gb-news-blog_nissan-item .gb-news-blog_nissan-item-text .gb-news-blog_nissan-item-title {
+      margin: 10px 0; }
+      .gb-page-blog_nissan .gb-news-blog_nissan-item .gb-news-blog_nissan-item-text .gb-news-blog_nissan-item-title h3 a {
+        display: block;
+        font-size: 15px;
+        text-align: left;
+        color: #222222; }
+        .gb-page-blog_nissan .gb-news-blog_nissan-item .gb-news-blog_nissan-item-text .gb-news-blog_nissan-item-title h3 a:hover {
+          color: #28377A;
+          text-decoration: none; }
+    .gb-page-blog_nissan .gb-news-blog_nissan-item .gb-news-blog_nissan-item-text .gb-news-blog_nissan-item-text-des p {
+      font-size: 14px;
+      line-height: 22px;
+      text-align: left;
+      color: #7b7b7b; }
+    .gb-page-blog_nissan .gb-news-blog_nissan-item .gb-news-blog_nissan-item-button {
+      margin-top: 30px; }
+      .gb-page-blog_nissan .gb-news-blog_nissan-item .gb-news-blog_nissan-item-button .btn {
+        border-radius: 0; }
+      .gb-page-blog_nissan .gb-news-blog_nissan-item .gb-news-blog_nissan-item-button .gb-btn-readmore {
+        background: #28377A;
+        color: white;
+        font-size: 14px;
+        padding-left: 30px;
+        padding-right: 30px;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s; }
+        .gb-page-blog_nissan .gb-news-blog_nissan-item .gb-news-blog_nissan-item-button .gb-btn-readmore:hover {
+          background-color: white;
+          color: #28377A;
+          border: 1px solid #28377A; }
+
+.gb-single-blog_nissan {
+  padding: 50px 0; }
+
+.gb-single-blog_nissan-right .gb-single-blog_nissan-right-img img {
+  width: 100%;
+  height: auto; }
+
+.gb-single-blog_nissan-right .gb-single-blog_nissan-right-title {
+  margin-top: 30px;
+  margin-bottom: 26px; }
+  .gb-single-blog_nissan-right .gb-single-blog_nissan-right-title h2 {
+    font-size: 30px;
+    line-height: 0.87;
+    text-align: left;
+    color: #222222; }
+    @media screen and (max-width: 767px) {
+      .gb-single-blog_nissan-right .gb-single-blog_nissan-right-title h2 {
+        font-size: 24px;
+        line-height: 26px; } }
+
+.gb-single-blog_nissan-right .gb-single-blog_nissan-right-info {
+  border-top: 1px solid #e9e9e9;
+  border-bottom: 1px solid #e9e9e9;
+  margin-bottom: 30px;
+  padding-top: 13px;
+  padding-bottom: 14px; }
+  .gb-single-blog_nissan-right .gb-single-blog_nissan-right-info ul {
+    margin: 0;
+    padding: 0; }
+    .gb-single-blog_nissan-right .gb-single-blog_nissan-right-info ul li {
+      list-style-type: none;
+      display: inline-block;
+      margin-right: 30px;
+      font-family: 'Open Sans', serif;
+      font-size: 14px;
+      font-style: italic;
+      line-height: 1.86;
+      text-align: left;
+      color: #7b7b7b; }
+      @media screen and (max-width: 767px) {
+        .gb-single-blog_nissan-right .gb-single-blog_nissan-right-info ul li {
+          margin-right: 24px; } }
+      .gb-single-blog_nissan-right .gb-single-blog_nissan-right-info ul li .fa {
+        font-family: FontAwesome;
+        font-size: 16px;
+        font-style: normal;
+        line-height: 1.63;
+        color: #28377A;
+        margin-right: 10px; }
+      .gb-single-blog_nissan-right .gb-single-blog_nissan-right-info ul li a {
+        color: #7b7b7b; }
+        .gb-single-blog_nissan-right .gb-single-blog_nissan-right-info ul li a:hover {
+          text-decoration: none;
+          color: #28377A; }
+
+.gb-single-blog_nissan-right .gb-single-blog_nissan-right-text p {
+  font-size: 14px;
+  line-height: 1.86;
+  text-align: left;
+  color: #7b7b7b; }
+  .gb-single-blog_nissan-right .gb-single-blog_nissan-right-text p span {
+    color: #28377A;
+    margin-right: 10px; }
+
+.gb-single-blog_nissan-right .gb-single-blog_nissan-right-text .gb-single-blog_nissan-quote {
+  margin: 20px 0; }
+  .gb-single-blog_nissan-right .gb-single-blog_nissan-right-text .gb-single-blog_nissan-quote blockquote {
+    border-left: none; }
+    .gb-single-blog_nissan-right .gb-single-blog_nissan-right-text .gb-single-blog_nissan-quote blockquote.quote-card {
+      position: relative;
+      padding-left: 71px;
+      border-top: 1px solid #28377A;
+      background: #f9f9f9; }
+      .gb-single-blog_nissan-right .gb-single-blog_nissan-right-text .gb-single-blog_nissan-quote blockquote.quote-card:before {
+        content: "“";
+        position: absolute;
+        top: 0;
+        left: 15px;
+        font-size: 120px;
+        color: #28377A;
+        font-weight: normal; }
+    .gb-single-blog_nissan-right .gb-single-blog_nissan-right-text .gb-single-blog_nissan-quote blockquote h4 {
+      font-size: 16px;
+      font-style: italic;
+      line-height: 1.88;
+      text-align: left;
+      color: #222222; }
+    .gb-single-blog_nissan-right .gb-single-blog_nissan-right-text .gb-single-blog_nissan-quote blockquote h3 {
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.63;
+      text-align: left;
+      color: #222222; }
+
+.gb-single-blog_nissan-right .gb-single-blog_nissan-share {
+  border-top: 1px solid #e9e9e9;
+  padding-top: 10px;
+  margin-top: 37px;
+  margin-bottom: 76px; }
+  .gb-single-blog_nissan-right .gb-single-blog_nissan-share .gb-single-blog_nissan-share-left ul {
+    margin: 0;
+    padding: 0; }
+    .gb-single-blog_nissan-right .gb-single-blog_nissan-share .gb-single-blog_nissan-share-left ul li {
+      list-style-type: none;
+      display: inline-block;
+      border: 1px solid #e9e9e9;
+      padding: 5px 15px; }
+      .gb-single-blog_nissan-right .gb-single-blog_nissan-share .gb-single-blog_nissan-share-left ul li a {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.86;
+        text-align: center;
+        color: #aeaeae;
+        text-decoration: none; }
+        .gb-single-blog_nissan-right .gb-single-blog_nissan-share .gb-single-blog_nissan-share-left ul li a:hover {
+          color: #28377A; }
+  .gb-single-blog_nissan-right .gb-single-blog_nissan-share .gb-single-blog_nissan-share-right {
+    position: absolute;
+    right: -36px; }
+    @media screen and (max-width: 767px) {
+      .gb-single-blog_nissan-right .gb-single-blog_nissan-share .gb-single-blog_nissan-share-right {
+        width: 100%;
+        right: 0;
+        margin-top: 15px; } }
+    .gb-single-blog_nissan-right .gb-single-blog_nissan-share .gb-single-blog_nissan-share-right ul {
+      margin: 0;
+      padding: 0; }
+      .gb-single-blog_nissan-right .gb-single-blog_nissan-share .gb-single-blog_nissan-share-right ul li {
+        list-style-type: none;
+        display: inline-block;
+        position: relative;
+        width: 36px;
+        height: 36px;
+        border-radius: 3px;
+        background-color: #f4f4f4;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
+        .gb-single-blog_nissan-right .gb-single-blog_nissan-share .gb-single-blog_nissan-share-right ul li:first-child {
+          border: none;
+          width: 20%;
+          background: none; }
+        .gb-single-blog_nissan-right .gb-single-blog_nissan-share .gb-single-blog_nissan-share-right ul li a {
+          text-decoration: none; }
+          .gb-single-blog_nissan-right .gb-single-blog_nissan-share .gb-single-blog_nissan-share-right ul li a .fa {
+            font-family: FontAwesome;
+            font-size: 14px;
+            line-height: 1.86;
+            text-align: center;
+            color: #aeaeae;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+        .gb-single-blog_nissan-right .gb-single-blog_nissan-share .gb-single-blog_nissan-share-right ul li span {
+          font-size: 14px;
+          font-weight: bold;
+          line-height: 2.17;
+          text-align: right;
+          color: #7b7b7b;
+          position: absolute; }
+        .gb-single-blog_nissan-right .gb-single-blog_nissan-share .gb-single-blog_nissan-share-right ul li:nth-child(2):hover {
+          background: #3b5998;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+          .gb-single-blog_nissan-right .gb-single-blog_nissan-share .gb-single-blog_nissan-share-right ul li:nth-child(2):hover a .fa {
+            color: white !important; }
+        .gb-single-blog_nissan-right .gb-single-blog_nissan-share .gb-single-blog_nissan-share-right ul li:nth-child(3):hover {
+          background: #2caae1;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+          .gb-single-blog_nissan-right .gb-single-blog_nissan-share .gb-single-blog_nissan-share-right ul li:nth-child(3):hover a .fa {
+            color: white !important; }
+        .gb-single-blog_nissan-right .gb-single-blog_nissan-share .gb-single-blog_nissan-share-right ul li:nth-child(4):hover {
+          background: #28377A;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+          .gb-single-blog_nissan-right .gb-single-blog_nissan-share .gb-single-blog_nissan-share-right ul li:nth-child(4):hover a .fa {
+            color: white !important; }
+        .gb-single-blog_nissan-right .gb-single-blog_nissan-share .gb-single-blog_nissan-share-right ul li:nth-child(5):hover {
+          background: #007bb6;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+          .gb-single-blog_nissan-right .gb-single-blog_nissan-share .gb-single-blog_nissan-share-right ul li:nth-child(5):hover a .fa {
+            color: white !important; }
+        .gb-single-blog_nissan-right .gb-single-blog_nissan-share .gb-single-blog_nissan-share-right ul li:nth-child(6):hover {
+          background: #28377A;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+          .gb-single-blog_nissan-right .gb-single-blog_nissan-share .gb-single-blog_nissan-share-right ul li:nth-child(6):hover a .fa {
+            color: white !important; }
+
+.gb-tintuc-lienquan .gb-tintuc-lienquan-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  color: #28377A;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 10px; }
+
+.gb-tintuc-lienquan .gb-tintuc-item .item-img {
+  height: 130px;
+  overflow: hidden; }
+
+.gb-tintuc-lienquan .gb-tintuc-item .item-text {
+  padding-top: 10px; }
+  .gb-tintuc-lienquan .gb-tintuc-item .item-text h2 a {
+    display: block;
+    font-size: 18px;
+    color: #333;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    line-height: 22px;
+    overflow: hidden; }
+  .gb-tintuc-lienquan .gb-tintuc-item .item-text p {
+    font-size: 14px;
+    line-height: 22px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden; }
+
+.gb-tintuc-lienquan .gb-tintuc-item time {
+  display: block;
+  margin: 15px 0; }
+
+.gb-tintuc-lienquan .gb-tintuc-item .btn-doctiep a {
+  display: inline-block;
+  min-width: 120px;
+  border: 1px solid #28377A;
+  text-align: center;
+  padding: 10px 0;
+  color: #fff;
+  font-size: 14px;
+  background: #28377A;
+  margin-top: 10px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+  .gb-tintuc-lienquan .gb-tintuc-item .btn-doctiep a:hover {
+    color: #28377A;
+    background: transparent; }
+
+.gb-newsbloghome_nissan {
+  padding: 50px 0; }
+  .gb-newsbloghome_nissan .gb-product_nissan-title {
+    margin-bottom: 30px; }
+    .gb-newsbloghome_nissan .gb-product_nissan-title h2 {
+      font-size: 36px;
+      font-weight: bold;
+      font-style: italic;
+      font-stretch: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #22292d;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+      margin-bottom: 0; }
+    .gb-newsbloghome_nissan .gb-product_nissan-title img {
+      margin: 0 auto; }
+  .gb-newsbloghome_nissan .gb-news-blog_nissan-item {
+    margin-bottom: 30px; }
+    .gb-newsbloghome_nissan .gb-news-blog_nissan-item .gb-news-blog_nissan-item-img {
+      position: relative;
+      z-index: 5;
+      overflow: hidden;
+      height: 257px; }
+      @media screen and (max-width: 767px) {
+        .gb-newsbloghome_nissan .gb-news-blog_nissan-item .gb-news-blog_nissan-item-img {
+          height: auto; } }
+      .gb-newsbloghome_nissan .gb-news-blog_nissan-item .gb-news-blog_nissan-item-img img {
+        width: 100%;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
+      .gb-newsbloghome_nissan .gb-news-blog_nissan-item .gb-news-blog_nissan-item-img:hover img {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
+      .gb-newsbloghome_nissan .gb-news-blog_nissan-item .gb-news-blog_nissan-item-img .caption-large {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        background-color: #ffffff;
+        -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
+        min-width: 115px;
+        height: 40px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: bold;
+        color: #777777; }
+    .gb-newsbloghome_nissan .gb-news-blog_nissan-item .gb-news-blog_nissan-item-text .gb-news-blog_nissan-item-title {
+      margin: 10px 0; }
+      .gb-newsbloghome_nissan .gb-news-blog_nissan-item .gb-news-blog_nissan-item-text .gb-news-blog_nissan-item-title h3 a {
+        display: block;
+        font-size: 15px;
+        text-align: left;
+        color: #222222; }
+        .gb-newsbloghome_nissan .gb-news-blog_nissan-item .gb-news-blog_nissan-item-text .gb-news-blog_nissan-item-title h3 a:hover {
+          color: #28377A;
+          text-decoration: none; }
+    .gb-newsbloghome_nissan .gb-news-blog_nissan-item .gb-news-blog_nissan-item-text .gb-news-blog_nissan-item-text-des p {
+      font-size: 14px;
+      line-height: 22px;
+      text-align: left;
+      color: #7b7b7b; }
+    .gb-newsbloghome_nissan .gb-news-blog_nissan-item .gb-news-blog_nissan-item-button {
+      margin-top: 30px; }
+      .gb-newsbloghome_nissan .gb-news-blog_nissan-item .gb-news-blog_nissan-item-button .btn {
+        border-radius: 0; }
+      .gb-newsbloghome_nissan .gb-news-blog_nissan-item .gb-news-blog_nissan-item-button .gb-btn-readmore {
+        background: #28377A;
+        color: white;
+        font-size: 14px;
+        padding-left: 30px;
+        padding-right: 30px;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s; }
+        .gb-newsbloghome_nissan .gb-news-blog_nissan-item .gb-news-blog_nissan-item-button .gb-btn-readmore:hover {
+          background-color: white;
+          color: #28377A;
+          border: 1px solid #28377A; }
+
+/*introduce*/
+.gb-introducehome_nissan {
+  padding: 50px 0;
+  background: url("../images/bg-detail.png") no-repeat;
+  background-size: cover;
+  background-position: center top; }
+  @media screen and (max-width: 991px) {
+    .gb-introducehome_nissan .gb-introducehome_nissan-left {
+      margin-bottom: 30px; } }
+  .gb-introducehome_nissan .gb-introducehome_nissan-left h2 {
+    font-size: 36px;
+    font-weight: bold;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    text-align: left;
+    color: #22292d;
+    text-transform: uppercase; }
+    .gb-introducehome_nissan .gb-introducehome_nissan-left h2 span {
+      color: #28377A;
+      display: block; }
+  .gb-introducehome_nissan .gb-introducehome_nissan-left .gb-divider {
+    border-color: #28377A;
+    margin: 15px 0; }
+  .gb-introducehome_nissan .gb-introducehome_nissan-left p {
+    margin: 20px 0;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+    text-align: left;
+    color: #666666; }
+  .gb-introducehome_nissan .gb-introducehome_nissan-left .xemtheme_nissan {
+    display: inline-block;
+    padding: 0 34px;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 44px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 4px;
+    background-color: #28377A;
+    border: 1px solid #28377A;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+
+/*PRODUCT*/
+.gb-product-moinhat_nissan {
+  padding: 50px 0; }
+  .gb-product-moinhat_nissan .gb-product_nissan-title {
+    margin-bottom: 30px; }
+    .gb-product-moinhat_nissan .gb-product_nissan-title h2 {
+      font-size: 36px;
+      font-weight: bold;
+      font-style: italic;
+      font-stretch: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #22292d;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+      margin-bottom: 0; }
+    .gb-product-moinhat_nissan .gb-product_nissan-title img {
+      margin: 0 auto; }
+  .gb-product-moinhat_nissan .gb-product_nissan-item {
+    position: relative;
+    border: 1px solid #e6e6e6;
+    -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0);
+    margin-bottom: 30px; }
+    .gb-product-moinhat_nissan .gb-product_nissan-item:hover {
+      -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.75);
+      box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.75); }
+      .gb-product-moinhat_nissan .gb-product_nissan-item:hover .gb-product_nissan-item-img .btn-cart-wishlist-compare_nissan {
+        opacity: 1;
+        top: 50%; }
+    .gb-product-moinhat_nissan .gb-product_nissan-item-img {
+      overflow: hidden;
+      height: 218px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .gb-product-moinhat_nissan .gb-product_nissan-item-img a {
+        display: block; }
+        .gb-product-moinhat_nissan .gb-product_nissan-item-img a img {
+          width: 100%;
+          height: auto;
+          margin: auto;
+          overflow: hidden;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+          .gb-product-moinhat_nissan .gb-product_nissan-item-img a img:hover {
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1); }
+          @media screen and (max-width: 767px) {
+            .gb-product-moinhat_nissan .gb-product_nissan-item-img a img {
+              height: auto; } }
+      .gb-product-moinhat_nissan .gb-product_nissan-item-img .btn-cart-wishlist-compare_nissan {
+        opacity: 0;
+        min-width: 150px;
+        display: inline-block;
+        position: absolute;
+        text-align: center;
+        top: 10%;
+        left: 50%;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        padding: 10px 0;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
+    .gb-product-moinhat_nissan .gb-product_nissan-item-text {
+      padding: 20px; }
+      .gb-product-moinhat_nissan .gb-product_nissan-item-text h3 a {
+        display: block;
+        font-size: 14px;
+        line-height: 21px;
+        color: #333;
+        font-weight: 500;
+        margin-bottom: 10px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        height: 40px; }
+  .gb-product-moinhat_nissan .owl-nav [class*=owl-] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: transparent !important;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+    .gb-product-moinhat_nissan .owl-nav [class*=owl-]:hover {
+      background: transparent !important;
+      border-color: #28377A; }
+  .gb-product-moinhat_nissan .owl-nav {
+    margin-top: 0 !important; }
+    @media screen and (max-width: 991px) and (min-width: 768px) {
+      .gb-product-moinhat_nissan .owl-nav {
+        top: -78px; } }
+    .gb-product-moinhat_nissan .owl-nav .owl-prev {
+      position: absolute;
+      top: -71px;
+      right: 30px;
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
+      display: flex !important; }
+      .gb-product-moinhat_nissan .owl-nav .owl-prev:before {
+        content: '\f104';
+        font-family: FontAwesome;
+        color: #28377A;
+        font-size: 30px; }
+    .gb-product-moinhat_nissan .owl-nav .owl-next {
+      position: absolute;
+      top: -71px;
+      right: 0;
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
+      display: flex !important; }
+      .gb-product-moinhat_nissan .owl-nav .owl-next:before {
+        content: '\f105';
+        font-family: FontAwesome;
+        color: #28377A;
+        font-size: 30px; }
+  .gb-product-moinhat_nissan .owl-theme .owl-dots {
+    position: absolute;
+    bottom: 20px;
+    width: 100%; }
+  .gb-product-moinhat_nissan .btn-xemthem-hyundai {
+    text-align: center; }
+    .gb-product-moinhat_nissan .btn-xemthem-hyundai a {
+      display: inline-block;
+      min-width: 160px;
+      line-height: 45px;
+      border-radius: 4px;
+      border: solid 1px #22292d;
+      background: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #fff;
+      background: #28377A;
+      text-transform: uppercase;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+
+.prices_nissan {
+  display: block;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 600;
+  text-align: left;
+  margin: 20px 0; }
+  .prices_nissan .prices_news_nissan {
+    color: #28377A; }
+  .prices_nissan .prices_old_nissan {
+    font-size: 14px;
+    color: #7a7a7a;
+    text-decoration: line-through;
+    font-weight: 400; }
+
+.gb-page-sanpham_nissan {
+  padding: 50px 0; }
+  .gb-page-sanpham_nissan .gb-product_nissan-item {
+    position: relative;
+    border: 1px solid #e6e6e6;
+    -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0);
+    margin-bottom: 30px; }
+    .gb-page-sanpham_nissan .gb-product_nissan-item:hover {
+      -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.75);
+      box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.75); }
+      .gb-page-sanpham_nissan .gb-product_nissan-item:hover .gb-product_nissan-item-img .btn-cart-wishlist-compare_nissan {
+        opacity: 1;
+        top: 50%; }
+    .gb-page-sanpham_nissan .gb-product_nissan-item-img {
+      overflow: hidden;
+      height: 218px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .gb-page-sanpham_nissan .gb-product_nissan-item-img a {
+        display: block; }
+        .gb-page-sanpham_nissan .gb-product_nissan-item-img a img {
+          width: 100%;
+          height: auto;
+          margin: auto;
+          overflow: hidden;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+          .gb-page-sanpham_nissan .gb-product_nissan-item-img a img:hover {
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1); }
+          @media screen and (max-width: 767px) {
+            .gb-page-sanpham_nissan .gb-product_nissan-item-img a img {
+              height: auto; } }
+      .gb-page-sanpham_nissan .gb-product_nissan-item-img .btn-cart-wishlist-compare_nissan {
+        opacity: 0;
+        min-width: 150px;
+        display: inline-block;
+        position: absolute;
+        text-align: center;
+        top: 10%;
+        left: 50%;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        padding: 10px 0;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
+    .gb-page-sanpham_nissan .gb-product_nissan-item-text {
+      padding: 20px; }
+      .gb-page-sanpham_nissan .gb-product_nissan-item-text h3 a {
+        display: block;
+        font-size: 14px;
+        line-height: 21px;
+        color: #333;
+        font-weight: 500;
+        margin-bottom: 10px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        height: 40px; }
+
+/*SLIDE IMAGE*/
+.gb-chitiet_sanpham_ruouvang {
+  padding: 50px 0; }
+
+.gb-chitiet_sanpham_ruouvang-body h1 {
+  font-size: 20px;
+  color: #333;
+  font-weight: 600; }
+
+.gb-chitiet_sanpham_ruouvang-body .gb-thongtintour-viettours .gb-thongtintour-viettours-left ul li {
+  font-size: 16px;
+  color: #000;
+  line-height: 26px;
+  margin-bottom: 10px; }
+
+.gb-chitiet_sanpham_ruouvang-body .gb-thongtintour-viettours .gb-thongtintour-viettours-left .gb-thongtintour-viettours-left-des p {
+  display: block;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px; }
+
+.gb-chitiet_sanpham_ruouvang-body .gb-thongtintour-viettours .gb-thongtintour-viettours-right img {
+  width: 100%;
+  height: auto; }
+
+.gb-chitiet_sanpham_ruouvang-body .gb-thongtintour-viettours .gb-thongtintour-viettours-right .prices_ruouvang {
+  text-align: right; }
+
+.gb-chitiet_sanpham_ruouvang-body .gb-thongtintour-viettours .gb-thongtintour-viettours-right .gb-datve-viettours {
+  text-align: right; }
+  .gb-chitiet_sanpham_ruouvang-body .gb-thongtintour-viettours .gb-thongtintour-viettours-right .gb-datve-viettours a {
+    display: inline-block;
+    background-color: #28377A;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    line-height: 38px;
+    text-transform: uppercase;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    padding: 0 30px; }
+
+.gb-chitiet_sanpham_ruouvang-body .gb-chitiettour-viettour {
+  margin: 30px 0; }
+  .gb-chitiet_sanpham_ruouvang-body .gb-chitiettour-viettour .gb-chitiettour-viettour-nav {
+    margin-bottom: 20px; }
+    .gb-chitiet_sanpham_ruouvang-body .gb-chitiettour-viettour .gb-chitiettour-viettour-nav ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .gb-chitiet_sanpham_ruouvang-body .gb-chitiettour-viettour .gb-chitiettour-viettour-nav ul li {
+        width: 20%;
+        float: left;
+        border-right: 1px solid #fff; }
+        .gb-chitiet_sanpham_ruouvang-body .gb-chitiettour-viettour .gb-chitiettour-viettour-nav ul li a {
+          display: block;
+          padding: 15px 0;
+          text-align: center;
+          color: #fff;
+          font-size: 14px;
+          text-transform: uppercase;
+          background: #28377A; }
+  .gb-chitiet_sanpham_ruouvang-body .gb-chitiettour-viettour .gb-chitiettour-viettour-content-1 {
+    margin-bottom: 30px; }
+    .gb-chitiet_sanpham_ruouvang-body .gb-chitiettour-viettour .gb-chitiettour-viettour-content-1 .gb-chitiettour-viettour-content-title {
+      border-bottom: 2px solid #28377A;
+      margin-bottom: 30px; }
+      .gb-chitiet_sanpham_ruouvang-body .gb-chitiettour-viettour .gb-chitiettour-viettour-content-1 .gb-chitiettour-viettour-content-title span {
+        display: inline-block;
+        padding: 15px 30px;
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+        text-transform: uppercase;
+        background: #28377A; }
+    .gb-chitiet_sanpham_ruouvang-body .gb-chitiettour-viettour .gb-chitiettour-viettour-content-1 .gb-chitiettour-viettour-content-body {
+      display: block;
+      color: #000;
+      font-size: 14px;
+      font-weight: 400; }
+      .gb-chitiet_sanpham_ruouvang-body .gb-chitiettour-viettour .gb-chitiettour-viettour-content-1 .gb-chitiettour-viettour-content-body p {
+        line-height: 26px; }
+
+/*SLIDE IMAGE*/
+@media screen and (max-width: 991px) {
+  .gb-chitiet_sanpham_ruouvang-left .gb-chitiet_sanpham_ruouvang_left-info {
+    padding-top: 20px; } }
+
+.gb-chitiet_sanpham_ruouvang-left .gb-chitiet_sanpham_ruouvang_left-info .brand-chitiet {
+  color: #333;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 10px; }
+  .gb-chitiet_sanpham_ruouvang-left .gb-chitiet_sanpham_ruouvang_left-info .brand-chitiet span {
+    color: #28377A; }
+
+.gb-chitiet_sanpham_ruouvang-left .gb-chitiet_sanpham_ruouvang_left-info .gb-divider {
+  margin: 10px 0; }
+
+.gb-chitiet_sanpham_ruouvang-left .gb-chitiet_sanpham_ruouvang_left-info .description {
+  margin-top: 20px; }
+  .gb-chitiet_sanpham_ruouvang-left .gb-chitiet_sanpham_ruouvang_left-info .description p {
+    display: block;
+    color: #797979;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px; }
+
+.gb-thongso-mota .tabbable-line > .nav-tabs {
+  border-bottom: 1px solid #28377A;
+  margin: 0; }
+
+.gb-thongso-mota .tabbable-line > .nav-tabs > li {
+  margin-right: 2px;
+  margin-bottom: 0; }
+
+.gb-thongso-mota .tabbable-line > .nav-tabs > li > a {
+  position: relative;
+  border: 0;
+  margin-right: 0;
+  color: #7a7a7a;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 10px 25px 10px 0; }
+  .gb-thongso-mota .tabbable-line > .nav-tabs > li > a:after {
+    content: '';
+    width: 100px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    z-index: 999;
+    bottom: -1px;
+    left: 0;
+    display: none; }
+
+.gb-thongso-mota .tabbable-line > .nav-tabs > li.open, .gb-thongso-mota .tabbable-line > .nav-tabs > li:hover {
+  position: relative;
+  border-bottom: none;
+  margin-bottom: -1px; }
+
+.gb-thongso-mota .tabbable-line > .nav-tabs > li.open > a, .gb-thongso-mota .tabbable-line > .nav-tabs > li:hover > a {
+  border: 0;
+  background: none !important;
+  color: #28377A; }
+
+.gb-thongso-mota .tabbable-line > .nav-tabs > li.active {
+  position: relative;
+  border-bottom: none;
+  margin-bottom: -1px; }
+  .gb-thongso-mota .tabbable-line > .nav-tabs > li.active a {
+    color: #000; }
+    .gb-thongso-mota .tabbable-line > .nav-tabs > li.active a:after {
+      display: block; }
+
+.gb-thongso-mota .tabbable-line > .tab-content {
+  margin-top: 20px;
+  background-color: #fff;
+  border: 0; }
+
+.gb-thongso-mota .portlet .tabbable-line > .tab-content {
+  padding-bottom: 0; }
+
+.gb-thongso-mota .tab-content h1 {
+  font-size: 24px;
+  font-weight: 600; }
+
+.gb-thongso-mota .tab-content h2 {
+  font-size: 22px;
+  font-weight: 600; }
+
+.gb-thongso-mota .tab-content h3 {
+  font-size: 20px;
+  font-weight: 600; }
+
+.gb-thongso-mota .tab-content h4 {
+  font-size: 18px;
+  font-weight: 600; }
+
+.gb-thongso-mota .tab-content h5 {
+  font-size: 16px;
+  font-weight: 600; }
+
+.gb-thongso-mota .tab-content h6 {
+  font-size: 14px;
+  font-weight: 600; }
+
+.gb-thongso-mota .tab-content ul li {
+  display: block;
+  color: #333;
+  font-size: 16px;
+  line-height: 26px; }
+
+.gb-thongso-mota .tab-content p {
+  color: #333;
+  font-size: 16px;
+  line-height: 26px; }
+
+/*entry meta*/
+.gb-entry-meta .gb-authour {
+  font-size: 20px;
+  line-height: 1.5; }
+  .gb-entry-meta .gb-authour a {
+    color: #28377A; }
+
+.gb-entry-meta .get-by {
+  font-size: 16px;
+  color: #28377A;
+  line-height: 1.5; }
+
+/*ENTRY SHIPPING*/
+.gb-entry-shipping p {
+  font-size: 16px; }
+  .gb-entry-shipping p i {
+    color: #28377A;
+    font-size: 24px; }
+
+.product-share-block .share-heading {
+  font-size: 18px;
+  color: #7a7a7a;
+  float: left;
+  padding-right: 20px;
+  padding-top: 10px; }
+
+.product-share-block ul li {
+  display: inline-block; }
+  .product-share-block ul li a {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #28377A;
+    color: #28377A;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+    .product-share-block ul li a:hover {
+      background: #28377A;
+      color: #fff; }
+
+.gb-imagelienquan-miavn {
+  margin-top: 60px; }
+  .gb-imagelienquan-miavn ul {
+    display: flow-root; }
+    .gb-imagelienquan-miavn ul li {
+      width: 14.2%;
+      float: left; }
+
+.gb-hotline-chitiet {
+  text-align: center;
+  padding-top: 10px;
+  line-height: 24px; }
+
+.gb-danhgia-chititet {
+  margin-top: 15px; }
+  .gb-danhgia-chititet .danhgia-star li {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold; }
+    .gb-danhgia-chititet .danhgia-star li span {
+      color: #28377A; }
+
+.gb-home-product-relate .titleCategoryProduct_nissan {
+  text-align: center;
+  font-size: 30px;
+  color: #333;
+  margin: 10px 0;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 30px; }
+  .gb-home-product-relate .titleCategoryProduct_nissan:after {
+    position: absolute;
+    bottom: -15px;
+    height: 0;
+    width: 150px;
+    border-bottom: 3px double #e57632;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    content: ""; }
+
+.gb-home-product-relate .owl-nav [class*=owl-] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: transparent !important;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+  .gb-home-product-relate .owl-nav [class*=owl-]:hover {
+    background: transparent !important;
+    border-color: #28377A; }
+    .gb-home-product-relate .owl-nav [class*=owl-]:hover:before {
+      color: #28377A; }
+
+.gb-home-product-relate .owl-nav {
+  margin-top: 0 !important; }
+  @media screen and (max-width: 991px) and (min-width: 768px) {
+    .gb-home-product-relate .owl-nav {
+      top: -78px; } }
+  .gb-home-product-relate .owl-nav .owl-prev {
+    position: absolute;
+    top: 45%;
+    left: -45px;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important; }
+    .gb-home-product-relate .owl-nav .owl-prev:before {
+      content: '\f177';
+      font-family: FontAwesome;
+      color: #afafaf;
+      font-size: 20px; }
+  .gb-home-product-relate .owl-nav .owl-next {
+    position: absolute;
+    top: 45%;
+    right: -45px;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important; }
+    .gb-home-product-relate .owl-nav .owl-next:before {
+      content: '\f178';
+      font-family: FontAwesome;
+      color: #afafaf;
+      font-size: 20px; }
+
+.gb-home-product-relate .gb-product_nissan-item {
+  position: relative;
+  border: 1px solid #e6e6e6;
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0);
+  margin-bottom: 30px; }
+  .gb-home-product-relate .gb-product_nissan-item:hover {
+    -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.75);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.75); }
+    .gb-home-product-relate .gb-product_nissan-item:hover .gb-product_nissan-item-img .btn-cart-wishlist-compare_nissan {
+      opacity: 1;
+      top: 50%; }
+  .gb-home-product-relate .gb-product_nissan-item-img {
+    overflow: hidden;
+    height: 218px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .gb-home-product-relate .gb-product_nissan-item-img a {
+      display: block; }
+      .gb-home-product-relate .gb-product_nissan-item-img a img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        overflow: hidden;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
+        .gb-home-product-relate .gb-product_nissan-item-img a img:hover {
+          -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          transform: scale(1.1); }
+        @media screen and (max-width: 767px) {
+          .gb-home-product-relate .gb-product_nissan-item-img a img {
+            height: auto; } }
+    .gb-home-product-relate .gb-product_nissan-item-img .btn-cart-wishlist-compare_nissan {
+      opacity: 0;
+      min-width: 150px;
+      display: inline-block;
+      position: absolute;
+      text-align: center;
+      top: 10%;
+      left: 50%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      padding: 10px 0;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+  .gb-home-product-relate .gb-product_nissan-item-text {
+    padding: 20px; }
+    .gb-home-product-relate .gb-product_nissan-item-text h3 a {
+      display: block;
+      font-size: 14px;
+      line-height: 21px;
+      color: #333;
+      font-weight: 500;
+      margin-bottom: 10px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      height: 40px; }
+
+.gb-hotromuaxetragop .btn-hotromuaoto {
+  background: #28377A;
+  padding: 6px 24px;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 1px solid #28377A;
+  border-radius: 3px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  text-shadow: none;
+  margin-bottom: 15px; }
+
+@media screen and (min-width: 1200px) {
+  .gb-hotromuaxetragop .modal-dialog {
+    width: 1170px; } }
+
+.gb-hotromuaxetragop h4 {
+  text-transform: uppercase;
+  color: #fff;
+  background: #28377A;
+  line-height: 14px;
+  padding: 13px 30px;
+  height: 40px;
+  font-weight: 500;
+  margin: 20px 0; }
+
+.gb-hotromuaxetragop label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 3px;
+  height: 25px; }
+
+.gb-hotromuaxetragop .btn-dangkyngay {
+  width: 100%;
+  background: #e57632;
+  padding: 6px 24px;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 1px solid #e57632;
+  border-radius: 3px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  text-shadow: none;
+  margin-left: 0; }
+
+.gb-hotromuaxetragop .hotromuaxe-form {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.gb-uoctinhvaynganhang .btn-hotromuaoto {
+  background: #28377A;
+  padding: 6px 24px;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 1px solid #28377A;
+  border-radius: 3px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  text-shadow: none;
+  margin-bottom: 15px; }
+
+@media screen and (min-width: 1200px) {
+  .gb-uoctinhvaynganhang .modal-dialog {
+    width: 1170px; } }
+
+.gb-uoctinhvaynganhang h4 {
+  text-transform: uppercase;
+  color: #fff;
+  background: #28377A;
+  line-height: 14px;
+  padding: 13px 30px;
+  height: 40px;
+  font-weight: 500;
+  margin: 20px 0; }
+
+.gb-uoctinhvaynganhang label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 3px;
+  height: 25px; }
+
+.gb-uoctinhvaynganhang .btn-dangkyngay {
+  width: 100%;
+  background: #e57632;
+  padding: 6px 24px;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 1px solid #e57632;
+  border-radius: 3px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  text-shadow: none;
+  margin-left: 0; }
+
+.gb-uoctinhvaynganhang .hotromuaxe-form {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.gb-sosanh-hyundai {
+  padding: 50px 0; }
+  .gb-sosanh-hyundai .gb-sosanh-hyundai-chonxe-item {
+    text-align: center;
+    background-color: #cfd3d5;
+    background: -webkit-linear-gradient(white, #cfd3d5);
+    background: -o-linear-gradient(white, #cfd3d5);
+    background: -moz-linear-gradient(white, #cfd3d5);
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#cfd3d5));
+    background: linear-gradient(white, #cfd3d5);
+    border: 1px solid #fff;
+    padding: 100px 0; }
+    .gb-sosanh-hyundai .gb-sosanh-hyundai-chonxe-item .btn-themxeplus {
+      width: 50%;
+      background: #28377A;
+      padding: 6px 24px;
+      font-size: 14px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.71;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+      text-transform: uppercase;
+      border: 1px solid #28377A;
+      border-radius: 3px;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      text-shadow: none;
+      margin-top: 20px; }
+    .gb-sosanh-hyundai .gb-sosanh-hyundai-chonxe-item img {
+      margin: 0 auto; }
+  .gb-sosanh-hyundai .gb-sosanh-hyundai-thongso {
+    padding: 20px 0; }
+    .gb-sosanh-hyundai .gb-sosanh-hyundai-thongso .title-group {
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size: 16px;
+      text-transform: uppercase;
+      background: #28377A;
+      color: #fff;
+      font-weight: 600; }
+    .gb-sosanh-hyundai .gb-sosanh-hyundai-thongso table tr {
+      border-top: 1px solid #ddd;
+      line-height: 24px; }
+      .gb-sosanh-hyundai .gb-sosanh-hyundai-thongso table tr td {
+        border: 1px solid #c6cacb;
+        text-align: center; }
+      .gb-sosanh-hyundai .gb-sosanh-hyundai-thongso table tr .property-bg {
+        background-color: #e4dcd3 !important;
+        color: black;
+        border-bottom: 1px solid #fff; }
+  @media screen and (min-width: 1200px) {
+    .gb-sosanh-hyundai .modal-dialog {
+      width: 1170px; } }
+  .gb-sosanh-hyundai label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 3px;
+    height: 25px; }
+  .gb-sosanh-hyundai .btn-dangkyngay {
+    width: 100%;
+    background: #e57632;
+    padding: 6px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: 1px solid #e57632;
+    border-radius: 3px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    text-shadow: none;
+    margin-left: 0; }
+  .gb-sosanh-hyundai .hotromuaxe-form {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .gb-sosanh-hyundai .gb-product_nissan-item {
+    position: relative;
+    border: 1px solid #e6e6e6;
+    -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0);
+    margin-bottom: 30px; }
+    .gb-sosanh-hyundai .gb-product_nissan-item:hover {
+      -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.75);
+      box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.75); }
+      .gb-sosanh-hyundai .gb-product_nissan-item:hover .gb-product_nissan-item-img .btn-cart-wishlist-compare_nissan {
+        opacity: 1;
+        top: 50%; }
+    .gb-sosanh-hyundai .gb-product_nissan-item-img {
+      overflow: hidden;
+      height: 120px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .gb-sosanh-hyundai .gb-product_nissan-item-img a {
+        display: block; }
+        .gb-sosanh-hyundai .gb-product_nissan-item-img a img {
+          width: 100%;
+          height: auto;
+          margin: auto;
+          overflow: hidden;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+          .gb-sosanh-hyundai .gb-product_nissan-item-img a img:hover {
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1); }
+          @media screen and (max-width: 767px) {
+            .gb-sosanh-hyundai .gb-product_nissan-item-img a img {
+              height: auto; } }
+      .gb-sosanh-hyundai .gb-product_nissan-item-img .btn-cart-wishlist-compare_nissan {
+        opacity: 0;
+        min-width: 150px;
+        display: inline-block;
+        position: absolute;
+        text-align: center;
+        top: 10%;
+        left: 50%;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        padding: 10px 0;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
+    .gb-sosanh-hyundai .gb-product_nissan-item-text {
+      padding: 20px; }
+      .gb-sosanh-hyundai .gb-product_nissan-item-text h3 {
+        display: block;
+        font-size: 14px;
+        line-height: 21px;
+        color: #333;
+        font-weight: 500;
+        margin-bottom: 10px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        height: 40px; }
+  .gb-sosanh-hyundai .chonxephienbanxe-sanpham {
+    height: 500px;
+    overflow: scroll;
+    overflow-x: hidden; }
+  .gb-sosanh-hyundai .btn-chonphienban {
+    width: 200px;
+    background: #e57632;
+    padding: 6px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: 1px solid #e57632;
+    border-radius: 3px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    text-shadow: none;
+    margin-top: 20px; }
+  .gb-sosanh-hyundai .nav-pills > li.active > a {
+    background: #28377A; }
+  .gb-sosanh-hyundai .gb-modalchonphienban-hyundai h2 {
+    font-weight: 700;
+    letter-spacing: .5px;
+    font-size: 24px;
+    line-height: 24px;
+    padding-bottom: 10px; }
+  .gb-sosanh-hyundai .gb-modalchonphienban-hyundai h4 {
+    font-weight: 700;
+    letter-spacing: .5px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #28377A;
+    padding-bottom: 10px;
+    text-transform: uppercase; }
+  .gb-sosanh-hyundai .gb-modalchonphienban-hyundai ul li {
+    width: 33.33%;
+    float: left;
+    font-size: 16px;
+    line-height: 25px;
+    color: #7a7a7a; }
+
+/*CART*/
+.btn-addtocart_nissan {
+  background: #28377A;
+  border-radius: 0;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  color: #fff; }
+
+.gb-chi-tiet-add-to-cart .quantity {
+  float: left; }
+  .gb-chi-tiet-add-to-cart .quantity label {
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 2.18;
+    text-align: left;
+    color: #666666;
+    text-transform: uppercase; }
+  .gb-chi-tiet-add-to-cart .quantity input {
+    width: 75px;
+    height: 36px;
+    border-radius: 0;
+    border: solid 1px #aeaeae; }
+  .gb-chi-tiet-add-to-cart .quantity .form-control {
+    margin-bottom: 0; }
+  .gb-chi-tiet-add-to-cart .quantity .form-group {
+    margin-bottom: 0; }
+
+.gb-chi-tiet-add-to-cart .cart {
+  position: relative;
+  padding-top: 20px; }
+
+.gb-chi-tiet-add-to-cart .single_add_to_cart_button {
+  position: absolute;
+  bottom: 0;
+  background: #28377A;
+  padding: 6px 24px;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 1px solid #28377A;
+  border-radius: 0;
+  margin-left: 10px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+  .gb-chi-tiet-add-to-cart .single_add_to_cart_button:hover {
+    color: #28377A;
+    background: transparent; }
+
+.gb-chi-tiet-add-to-cart .product_meta {
+  padding-top: 25px; }
+  .gb-chi-tiet-add-to-cart .product_meta span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #404040;
+    text-transform: uppercase; }
+    .gb-chi-tiet-add-to-cart .product_meta span a {
+      font-size: 14px;
+      font-weight: normal;
+      text-align: left;
+      color: #808080;
+      text-transform: none; }
+      .gb-chi-tiet-add-to-cart .product_meta span a:after {
+        content: ","; }
+      .gb-chi-tiet-add-to-cart .product_meta span a:last-child:after {
+        content: ""; }
+
+.gb-header-cart-yeuthich_nissan .btn-yeuthich-nissan {
+  background: transparent;
+  border: none;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-weight: 500;
+  font-size: 14px; }
+  .gb-header-cart-yeuthich_nissan .btn-yeuthich-nissan i {
+    color: #e57632; }
+
+.gb-header-cart_nissan {
+  text-align: right; }
+  .gb-header-cart_nissan .btn-cart-nissan {
+    background: #28377A;
+    border: none;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 0;
+    padding: 17px 20px;
+    color: #fff; }
+
+.btn-wishlist_nissan {
+  background: #28377A;
+  border-radius: 0;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  color: #fff; }
+
+.btn-compare_nissan {
+  background: #28377A;
+  border-radius: 0;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  color: #fff; }
+
+.btn-cart-wishlist-compare_nissan ul li {
+  display: inline-block; }
+
+/*FOOTER*/
+.footer-main-content_nissan {
+  padding: 50px 0;
+  background: url("../images/bg-detail.png") no-repeat;
+  background-size: cover;
+  background-position: center top; }
+  .footer-main-content_nissan hr {
+    border-top: 1px solid #e57632; }
+
+.copyright-area_nissan p {
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  padding: 15px 0;
+  color: #7a7a7a; }
+
+.widget-title-footer-nissan {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 15px; }
+
+.footer-link-nissan ul li {
+  border-bottom: 1px dashed #ddd; }
+  .footer-link-nissan ul li a {
+    font-size: 14px;
+    line-height: 45px;
+    color: #7a7a7a; }
+
+.footer-logo-nissan {
+  margin-bottom: 30px; }
+  .footer-logo-nissan img {
+    width: 50%;
+    margin: 0 auto; }
+
+.footer-about-nissan ul li {
+  font-size: 14px;
+  line-height: 30px;
+  color: red;
+  font-weight: 600; }
+  .footer-about-nissan ul li span {
+    color: #28377A;
+    font-weight: 600;
+    text-transform: uppercase; }
+
+/*EMAIL*/
+.gb-news-letter_nissan {
+  background: url("../images/375656f94762f5a.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 50px 0; }
+
+.gb-footer-newletter_nissan h4 {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #e57632; }
+
+.gb-footer-newletter_nissan .input-group {
+  border-radius: 4px; }
+
+.gb-footer-newletter_nissan .form-control {
+  height: 44px;
+  border: 1px solid #dbdbdb;
+  border-radius: 0; }
+
+.gb-footer-newletter_nissan p {
+  color: #fff;
+  line-height: 20px;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px; }
+
+.gb-footer-newletter_nissan span .btn-theme {
+  height: 44px;
+  color: #fff;
+  border-radius: 0;
+  border: 1px solid #dbdbdb;
+  background: #28377A;
+  padding: 6px 30px;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.gb-lienhe {
+  padding: 50px 0; }
+
+.gb-form-lienhe h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  color: #333;
+  margin-top: 10px;
+  text-transform: uppercase;
+  margin-bottom: 5px; }
+
+.gb-form-lienhe form label {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  color: #333;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+.gb-form-lienhe .btn-gui {
+  min-width: 200px;
+  background: #28377A;
+  border: 2px solid #28377A;
+  color: #fff;
+  border-radius: 0;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+  .gb-form-lienhe .btn-gui:hover {
+    background: transparent;
+    color: #28377A; }
+
+/*sidebar*/
+.widget-sidebar {
+  margin-bottom: 30px; }
+
+.gb-timkiem-sidebar-nissan .widget-title-sidebar-nissan {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #28377A; }
+
+.gb-timkiem-sidebar-nissan .vk-newlist-banner-test-search button {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.gb-timkiem-sidebar-nissan .vk-newlist-banner-test-search button:hover {
+  background: #28377A;
+  color: #fff; }
+
+.gb-timkiem-sidebar-nissan form {
+  border-radius: 0;
+  overflow: hidden; }
+
+.gb-timkiem-sidebar-nissan .vk-newlist-banner-test-search {
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  border: solid 1px #28377A;
+  border-radius: 0; }
+  .gb-timkiem-sidebar-nissan .vk-newlist-banner-test-search input {
+    width: 80%;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #333;
+    background: transparent;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    text-indent: 15px; }
+  .gb-timkiem-sidebar-nissan .vk-newlist-banner-test-search button {
+    width: 20%;
+    height: 48px;
+    background: #28377A;
+    border: none;
+    border-left: 1px solid #28377A;
+    outline: none;
+    text-align: center;
+    line-height: 44px;
+    color: #fff;
+    font-size: 14px;
+    float: right;
+    border-radius: 0;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+    .gb-timkiem-sidebar-nissan .vk-newlist-banner-test-search button:hover {
+      color: #28377A;
+      background: transparent; }
+
+.gb-danhmuc-sidebar-nissan .widget-title-sidebar-nissan {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #28377A; }
+
+.gb-danhmuc-sidebar-nissan ul li a {
+  display: block;
+  font-size: 14px;
+  line-height: 2.57;
+  text-align: left;
+  color: #7b7b7b; }
+  .gb-danhmuc-sidebar-nissan ul li a:hover {
+    text-decoration: none;
+    color: #28377A; }
+  .gb-danhmuc-sidebar-nissan ul li a span {
+    font-size: 10px;
+    margin-right: 7px;
+    color: #28377A; }
+
+.gb-recenpost-sidebar-nissan .widget-title-sidebar-nissan {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  position: relative;
+  line-height: 40px;
+  padding-left: 10px;
+  background: #28377A;
+  border-left: 5px solid #e57632; }
+
+.gb-recenpost-sidebar-nissan .gb-blog-left-recent-posts_nissan ul {
+  padding: 0; }
+  .gb-recenpost-sidebar-nissan .gb-blog-left-recent-posts_nissan ul li {
+    list-style-type: none;
+    clear: both;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #eee; }
+    .gb-recenpost-sidebar-nissan .gb-blog-left-recent-posts_nissan ul li:first-child {
+      padding-top: 0;
+      border: none; }
+    .gb-recenpost-sidebar-nissan .gb-blog-left-recent-posts_nissan ul li .gb-item-recent-posts_nissan .gb-item-recent-posts_nissan-img {
+      float: left;
+      margin-right: 20px;
+      position: relative; }
+      .gb-recenpost-sidebar-nissan .gb-blog-left-recent-posts_nissan ul li .gb-item-recent-posts_nissan .gb-item-recent-posts_nissan-img img {
+        width: 70px;
+        height: 70px;
+        border-radius: 3px; }
+    .gb-recenpost-sidebar-nissan .gb-blog-left-recent-posts_nissan ul li .gb-item-recent-posts_nissan .gb-item-recent-posts_nissan-text {
+      padding-left: 90px; }
+      .gb-recenpost-sidebar-nissan .gb-blog-left-recent-posts_nissan ul li .gb-item-recent-posts_nissan .gb-item-recent-posts_nissan-text h2 {
+        margin: 0; }
+        .gb-recenpost-sidebar-nissan .gb-blog-left-recent-posts_nissan ul li .gb-item-recent-posts_nissan .gb-item-recent-posts_nissan-text h2 a {
+          font-size: 14px;
+          font-weight: bold;
+          line-height: 1.57;
+          text-align: left;
+          color: #222222;
+          overflow: hidden;
+          display: block;
+          margin-bottom: 10px; }
+          .gb-recenpost-sidebar-nissan .gb-blog-left-recent-posts_nissan ul li .gb-item-recent-posts_nissan .gb-item-recent-posts_nissan-text h2 a:hover {
+            text-decoration: none;
+            color: #28377A; }
+      .gb-recenpost-sidebar-nissan .gb-blog-left-recent-posts_nissan ul li .gb-item-recent-posts_nissan .gb-item-recent-posts_nissan-text .gb-item-recent-post-time_nissan span {
+        font-size: 13px;
+        line-height: 2;
+        text-align: left;
+        color: #aeaeae; }
+        .gb-recenpost-sidebar-nissan .gb-blog-left-recent-posts_nissan ul li .gb-item-recent-posts_nissan .gb-item-recent-posts_nissan-text .gb-item-recent-post-time_nissan span .fa {
+          font-family: 'FontAwesome';
+          font-size: 14px;
+          text-align: left;
+          color: #28377A;
+          margin-right: 10px; }
+
+.gb-product-sidebar-nissan .widget-title-sidebar-nissan {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  position: relative;
+  line-height: 40px;
+  padding-left: 10px;
+  background: #28377A;
+  border-left: 5px solid #e57632; }
+
+.gb-product-sidebar-nissan .gb-product-sidebar_nissan-item {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #e0e0e0; }
+  .gb-product-sidebar-nissan .gb-product-sidebar_nissan-item:last-child {
+    border-bottom: none; }
+  .gb-product-sidebar-nissan .gb-product-sidebar_nissan-item .gb-product-sidebar_nissan-item-img {
+    float: left;
+    border: 1px solid #E0E0E0; }
+    .gb-product-sidebar-nissan .gb-product-sidebar_nissan-item .gb-product-sidebar_nissan-item-img img {
+      width: 60px;
+      height: 60px;
+      overflow: hidden; }
+  .gb-product-sidebar-nissan .gb-product-sidebar_nissan-item .gb-product-sidebar_nissan-item-info {
+    padding-left: 80px; }
+    .gb-product-sidebar-nissan .gb-product-sidebar_nissan-item .gb-product-sidebar_nissan-item-info h4 a {
+      display: block;
+      font-size: 14px;
+      line-height: 21px;
+      color: #333;
+      font-weight: 500;
+      margin-bottom: 10px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden; }
+    .gb-product-sidebar-nissan .gb-product-sidebar_nissan-item .gb-product-sidebar_nissan-item-info .prices_nissan {
+      font-size: 14px;
+      text-align: left; }
+
+.gb-filterprices-sidebar-nissan .widget-title-sidebar-nissan {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #28377A; }
+
+.gb-filterprices-sidebar-nissan #slider-range {
+  width: 100%;
+  height: 5px;
+  background: #E0E0E0;
+  border-radius: 2px;
+  border: none;
+  margin-top: 40px; }
+
+.gb-filterprices-sidebar-nissan .ui-state-active {
+  border-color: transparent;
+  background: transparent; }
+
+.gb-filterprices-sidebar-nissan .ui-state-default {
+  position: relative;
+  border-color: transparent;
+  background: transparent;
+  outline: none; }
+  .gb-filterprices-sidebar-nissan .ui-state-default:before {
+    content: '';
+    width: 16px !important;
+    height: 16px !important;
+    background: #28377A !important;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    top: 0px;
+    position: absolute; }
+  .gb-filterprices-sidebar-nissan .ui-state-default:after {
+    content: '';
+    width: 10px !important;
+    height: 10px !important;
+    background: #fff !important;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    top: 3px;
+    left: 3px;
+    position: absolute; }
+
+.gb-filterprices-sidebar-nissan .ui-slider-horizontal .ui-slider-range {
+  background: #28377A;
+  margin-left: -5px; }
+
+.gb-filterprices-sidebar-nissan .ui-slider-horizontal .ui-slider-range {
+  background: #28377A;
+  margin-left: -5px; }
+
+.gb-filterprices-sidebar-nissan .label-filter-price {
+  text-align: center;
+  margin-top: 25px; }
+  .gb-filterprices-sidebar-nissan .label-filter-price input {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    text-align: center;
+    color: #666666;
+    border: none;
+    background: transparent; }
+
+.gb-filterprices-sidebar-nissan .btn-filter-prince {
+  width: 100%;
+  height: 44px;
+  border: none;
+  outline: none;
+  background: #28377A;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 14px;
+  border-radius: 3px;
+  color: #FFF;
+  position: relative;
+  margin-top: 25px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+  .gb-filterprices-sidebar-nissan .btn-filter-prince:hover {
+    border: 1px solid #28377A;
+    background: none;
+    color: #28377A;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+
+.gb-filterprices-sidebar-nissan .ui-state-default, .gb-filterprices-sidebar-nissan .ui-widget-content .ui-state-default, .gb-filterprices-sidebar-nissan .ui-widget-header .ui-state-default, .gb-filterprices-sidebar-nissan .ui-button, .gb-filterprices-sidebar-nissan html .ui-button.ui-state-disabled:hover, .gb-filterprices-sidebar-nissan html .ui-button.ui-state-disabled:active {
+  border: none;
+  background: transparent; }
+
+@media screen and (max-width: 991px) {
+  .side_bar_khuyenmai-banhatgiong {
+    margin-top: 30px; } }
+
+.side_bar_khuyenmai-banhatgiong .widget-title-tintuc {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: #28377A;
+  font-weight: 600; }
+
+.side_bar_khuyenmai-banhatgiong ul li:nth-child(2n) {
+  margin-right: 0; }
+
+.side_bar_khuyenmai-banhatgiong .list_pro_sale-banhatgiong {
+  display: flow-root; }
+
+.side_bar_khuyenmai-banhatgiong .item_pro_sale-banhatgiong {
+  width: 49%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  background-color: #fff;
+  border: 1px solid #f5f5f5;
+  position: relative;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  float: left;
+  height: 170px;
+  overflow: hidden; }
+
+.side_bar_khuyenmai-banhatgiong .item_pro_sale-banhatgiong:hover {
+  border: 1px solid #fd0b11;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s; }
+
+.side_bar_khuyenmai-banhatgiong .item_pro_sale-banhatgiong:hover .box_info_pro_sale a {
+  color: #fd0b11; }
+
+.side_bar_khuyenmai-banhatgiong .item_pro_sale-banhatgiong:last-child {
+  margin-right: 0; }
+
+.side_bar_khuyenmai-banhatgiong .sale-banhatgiong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2px 5px;
+  background-color: #fd0b11;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600; }
+
+.side_bar_khuyenmai-banhatgiong .box_image_pro_sale img {
+  width: 100%;
+  height: 126px;
+  overflow: hidden; }
+
+.side_bar_khuyenmai-banhatgiong .box_info_pro_sale a {
+  width: 100%;
+  font-size: 13px;
+  color: #666;
+  padding: 8px 0; }
+
+.side_bar_khuyenmai-banhatgiong .linkSaleLeft, .side_bar_khuyenmai-banhatgiong .linkSaleLeft img {
+  float: left;
+  width: 100%;
+  margin-top: 15px; }
+
+/*BREARDCRUMS*/
+.gb-breadcrumbs_nissan {
+  background: url("../images/bg-detail.png") no-repeat;
+  background-size: cover;
+  height: 300px;
+  background-position: center top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .gb-breadcrumbs_nissan .hero-title-breadcrums_nissan {
+    color: #28377A;
+    font-size: 40px;
+    text-align: center; }
+
+/*search*/
+.product-filter {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+  margin-bottom: 30px; }
+  .product-filter label {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-right: 10px;
+    color: #fff;
+    background: #28377A; }
+  .product-filter .filter-panel-item-kweco {
+    position: relative; }
+    .product-filter .filter-panel-item-kweco label {
+      display: block;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #fff;
+      border: 1px solid #ddd;
+      padding: 10px 20px;
+      margin-bottom: 15px;
+      margin-right: 0; }
+    .product-filter .filter-panel-item-kweco .filter-panel {
+      position: absolute;
+      width: 100%;
+      background: #f1f1f1;
+      z-index: 999;
+      top: 34px;
+      padding: 10px 20px; }
+      .product-filter .filter-panel-item-kweco .filter-panel ul li {
+        line-height: 35px; }
+  .product-filter .btn-chonxe {
+    width: 100%;
+    background: #28377A;
+    padding: 6px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: 1px solid #28377A;
+    border-radius: 3px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    text-shadow: none; }
+
+.product-filter-itemperpage {
+  float: left; }
+  .product-filter-itemperpage .btn-primary {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 2.14;
+    text-align: center;
+    color: #000;
+    width: 150px;
+    height: 40px;
+    border-radius: 3px;
+    border: solid 1px #e0e0e0;
+    padding: 0 15px;
+    background: transparent; }
+  @media screen and (max-width: 767px) {
+    .product-filter-itemperpage {
+      float: none; } }
+  .product-filter-itemperpage form {
+    margin-bottom: 0; }
+  .product-filter-itemperpage select {
+    font-size: 14px;
+    line-height: 2.14;
+    text-align: left;
+    color: #666;
+    width: 100px;
+    height: 40px;
+    border-radius: 3px;
+    border: solid 1px #e0e0e0;
+    padding: 0 15px; }
+    @media screen and (max-width: 767px) {
+      .product-filter-itemperpage select {
+        width: 100%; } }
+    .product-filter-itemperpage select option {
+      font-size: 14px;
+      line-height: 2.14;
+      text-align: left;
+      color: #808080; }
+
+.product-filter-itemperpage-ordering {
+  float: right; }
+  @media screen and (max-width: 767px) {
+    .product-filter-itemperpage-ordering {
+      float: none;
+      margin-top: 20px; } }
+  .product-filter-itemperpage-ordering p {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.14;
+    letter-spacing: normal;
+    text-align: left;
+    color: #aeaeae;
+    padding-top: 15px; }
+  .product-filter-itemperpage-ordering form {
+    margin-bottom: 0; }
+  .product-filter-itemperpage-ordering select {
+    font-size: 14px;
+    line-height: 2.14;
+    text-align: left;
+    color: #666;
+    width: 150px;
+    height: 40px;
+    border-radius: 3px;
+    border: solid 1px #e0e0e0;
+    padding: 0 15px; }
+    @media screen and (max-width: 767px) {
+      .product-filter-itemperpage-ordering select {
+        width: 100%; } }
+    .product-filter-itemperpage-ordering select option {
+      font-size: 14px;
+      line-height: 2.14;
+      text-align: left;
+      color: #808080; }
+
+.gb-header-search_nissan .vk-newlist-banner-test-search button {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.gb-header-search_nissan .vk-newlist-banner-test-search button:hover {
+  background: #28377A;
+  color: #fff; }
+
+.gb-header-search_nissan form {
+  border-radius: 0;
+  overflow: hidden; }
+
+.gb-header-search_nissan .vk-newlist-banner-test-search {
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  border: solid 1px #28377A;
+  border-radius: 0; }
+  .gb-header-search_nissan .vk-newlist-banner-test-search input {
+    width: 80%;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #333;
+    background: transparent;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    text-indent: 15px; }
+  .gb-header-search_nissan .vk-newlist-banner-test-search button {
+    width: 20%;
+    height: 48px;
+    background: #28377A;
+    border: none;
+    border-left: 1px solid #28377A;
+    outline: none;
+    text-align: center;
+    line-height: 44px;
+    color: #fff;
+    font-size: 14px;
+    float: right;
+    border-radius: 0;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+    .gb-header-search_nissan .vk-newlist-banner-test-search button:hover {
+      color: #28377A;
+      background: transparent; }
+
+/*CONTACT*/
+.gb-gioithieu-company {
+  background: #f4f4f4;
+  padding: 20px;
+  margin-bottom: 40px; }
+  .gb-gioithieu-company h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 10px; }
+  .gb-gioithieu-company p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #333; }
+  .gb-gioithieu-company .gb-dress-intro ul li {
+    display: flow-root;
+    margin-bottom: 10px; }
+    .gb-gioithieu-company .gb-dress-intro ul li .icons {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #28377A;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      color: #28377A;
+      float: left; }
+    .gb-gioithieu-company .gb-dress-intro ul li p {
+      padding-left: 60px;
+      color: #333;
+      font-size: 16px;
+      line-height: 1.5; }
+  .gb-gioithieu-company .gb-support-intro ul li {
+    display: flow-root;
+    margin-bottom: 10px; }
+    .gb-gioithieu-company .gb-support-intro ul li .icons {
+      width: 35px;
+      height: 25px;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      color: #28377A;
+      float: left; }
+    .gb-gioithieu-company .gb-support-intro ul li p {
+      padding-left: 60px;
+      color: #333;
+      font-size: 16px; }
+
+.footer-address-nissan h4 {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #28377A; }
+
+.footer-address-nissan ul li {
+  color: #7a7a7a;
+  line-height: 30px;
+  font-size: 16px; }
+  .footer-address-nissan ul li i {
+    font-weight: 600;
+    margin-right: 5px; }
+
+/*CHARACTERISTICS*/
+.gb-taisaochonchungtoi_nissan {
+  background: url("../images/background.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 50px 0; }
+  .gb-taisaochonchungtoi_nissan .gb-cacbuocthanhtoan_nissan-title {
+    margin-bottom: 30px; }
+    .gb-taisaochonchungtoi_nissan .gb-cacbuocthanhtoan_nissan-title h2 {
+      font-size: 36px;
+      font-weight: bold;
+      font-style: italic;
+      font-stretch: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #fff;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+      margin-bottom: 0; }
+    .gb-taisaochonchungtoi_nissan .gb-cacbuocthanhtoan_nissan-title img {
+      margin: 0 auto; }
+  .gb-taisaochonchungtoi_nissan .gb-cacbuocthanhtoan_nissan-item {
+    margin-bottom: 30px; }
+    .gb-taisaochonchungtoi_nissan .gb-cacbuocthanhtoan_nissan-item .item-icons {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      float: left;
+      width: 60px;
+      height: 60px;
+      border-radius: 4px;
+      border: solid 1px #fff; }
+    .gb-taisaochonchungtoi_nissan .gb-cacbuocthanhtoan_nissan-item .item-caption {
+      padding-left: 80px; }
+      .gb-taisaochonchungtoi_nissan .gb-cacbuocthanhtoan_nissan-item .item-caption h4 {
+        font-size: 18px;
+        font-weight: bold;
+        font-style: italic;
+        font-stretch: normal;
+        line-height: 0.94;
+        margin-bottom: 15px;
+        letter-spacing: normal;
+        text-align: left;
+        color: #fff;
+        text-transform: uppercase; }
+      .gb-taisaochonchungtoi_nissan .gb-cacbuocthanhtoan_nissan-item .item-caption p {
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 22px;
+        letter-spacing: normal;
+        text-align: left;
+        color: rgba(255, 255, 255, 0.7); }
+
+/*OTHER*/
+.gb-other-dangkylaithu {
+  padding-bottom: 50px; }
+  .gb-other-dangkylaithu .gb-other-dangkylaithu-item .gb-other-dangkylaithu-img {
+    height: 150px;
+    overflow: hidden; }
+    .gb-other-dangkylaithu .gb-other-dangkylaithu-item .gb-other-dangkylaithu-img:hover a img {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1); }
+    .gb-other-dangkylaithu .gb-other-dangkylaithu-item .gb-other-dangkylaithu-img a img {
+      width: 100%;
+      height: auto;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+  .gb-other-dangkylaithu .gb-other-dangkylaithu-item h3 a {
+    display: block;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px 0;
+    background: #28377A; }

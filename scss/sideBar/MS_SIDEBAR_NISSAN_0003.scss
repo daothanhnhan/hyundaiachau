@@ -1,0 +1,78 @@
+.gb-recenpost-sidebar-nissan{
+  .widget-title-sidebar-nissan{
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    color: $color-white;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+    line-height: 40px;
+    padding-left: 10px;
+    background: $color-main-nissan;
+    border-left: 5px solid $color-main1-nissan;
+  }
+  .gb-blog-left-recent-posts_nissan{
+    ul{
+      padding: 0;
+      li{
+        list-style-type: none;
+        clear: both;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-top: 1px solid #eee;
+        &:first-child{
+          padding-top: 0;
+          border:none;
+        }
+        .gb-item-recent-posts_nissan{
+          .gb-item-recent-posts_nissan-img{
+            float: left;
+            margin-right: 20px;
+            position: relative;
+            img{
+              width: 70px;
+              height:70px;
+              border-radius: 3px;
+            }
+          }
+          .gb-item-recent-posts_nissan-text{
+            padding-left: 90px;
+            h2{
+              margin: 0;
+              a{
+                font-size: 14px;
+                font-weight: bold;
+                line-height: 1.57;
+                text-align: left;
+                color: #222222;
+                overflow: hidden;
+                display: block;
+                margin-bottom: 10px;
+                &:hover{
+                  text-decoration: none;
+                  color: $color-main-nissan;
+                }
+              }
+            }
+            .gb-item-recent-post-time_nissan{
+              span{
+                .fa{
+                  font-family: 'FontAwesome';
+                  font-size: 14px;
+                  text-align: left;
+                  color: $color-main-nissan;
+                  margin-right: 10px;
+                }
+                font-size: 13px;
+                line-height: 2;
+                text-align: left;
+                color: #aeaeae;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

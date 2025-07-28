@@ -1,0 +1,232 @@
+.gb-sosanh-hyundai{
+  padding:  50px 0;
+  .gb-sosanh-hyundai-chonxe-item{
+    text-align:  center;
+    background-color: #cfd3d5;
+    background: -webkit-linear-gradient(white, #cfd3d5);
+    background: -o-linear-gradient(white, #cfd3d5);
+    background: -moz-linear-gradient(white, #cfd3d5);
+    background: linear-gradient(white, #cfd3d5);
+    border: 1px solid #fff;
+    padding:  100px 0;
+    .btn-themxeplus{
+      width: 50%;
+      background: $color-main-nissan;
+      padding: 6px 24px;
+      font-size: 14px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.71;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+      text-transform: uppercase;
+      border: 1px solid $color-main-nissan;
+      border-radius: 3px;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      text-shadow:  none;
+      margin-top: 20px;
+    }
+    img{
+      margin:  0 auto;
+    }
+  }
+  .gb-sosanh-hyundai-thongso{
+    padding:  20px 0;
+    .title-group{
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size:  16px;
+      text-transform:  uppercase;
+      background:  $color-main-nissan;
+      color: #fff;
+      font-weight:  600;
+    }
+    table{
+      tr{
+        border-top: 1px solid #ddd;
+        line-height: 24px;
+        td{
+          border: 1px solid #c6cacb;
+          text-align: center;
+        }
+        .property-bg{
+          background-color: #e4dcd3 !important;
+          color: black;
+          border-bottom: 1px solid #fff;
+        }
+      }
+    }
+  }
+  .modal-dialog{
+    @media screen and (min-width: 1200px) {
+      width: 1170px;
+    }
+  }
+  label{
+    display:  block;
+    font-weight: 500;
+    margin-bottom: 3px;
+    height: 25px;
+  }
+  .btn-dangkyngay{
+    width:  100%;
+    background: #e57632;
+    padding: 6px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: 1px solid #e57632;
+    border-radius: 3px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    text-shadow:  none;
+    margin-left:  0;
+  }
+  .hotromuaxe-form{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display:  flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gb-product_nissan-item{
+    position: relative;
+    //background: #efefef;
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0);
+    margin-bottom: 30px;
+    &:hover{
+      box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.75);
+      .gb-product_nissan-item-img{
+        .btn-cart-wishlist-compare_nissan{
+          opacity: 1;
+          top: 50%;
+        }
+      }
+    }
+    &-img{
+      overflow: hidden;
+      height: 120px;
+      display:  flex;
+      align-items: center;
+      justify-content: center;
+      a{
+        display:  block;
+        img{
+          width: 100%;
+          height: auto;
+          margin:  auto;
+          overflow:  hidden;
+          transition:  all 0.5s;
+          &:hover{
+            transform: scale(1.1);
+          }
+          @media screen and (max-width: 767px) {
+            height:  auto;
+          }
+        }
+      }
+      .btn-cart-wishlist-compare_nissan{
+        opacity: 0;
+        min-width: 150px;
+        display: inline-block;
+        position: absolute;
+        text-align: center;
+        top: 10%;
+        left: 50%;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        padding: 10px 0;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+      }
+    }
+    &-text{
+      padding: 20px;
+      h3{
+        display:  block;
+        font-size: 14px;
+        line-height: 21px;
+        color: $color-1;
+        font-weight: 500;
+        margin-bottom: 10px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        height: 40px;
+      }
+    }
+  }
+  .chonxephienbanxe-sanpham{
+    height: 500px;
+    overflow:  scroll;
+    overflow-x: hidden;
+  }
+  .btn-chonphienban{
+    width: 200px;
+    background: $color-main1-nissan;
+    padding: 6px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: 1px solid $color-main1-nissan;
+    border-radius: 3px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    text-shadow:  none;
+    margin-top: 20px;
+  }
+  .nav-pills>li.active>a{
+    background: $color-main-nissan;
+  }
+  .gb-modalchonphienban-hyundai{
+    h2{
+      font-weight: 700;
+      letter-spacing: .5px;
+      font-size: 24px;
+      line-height: 24px;
+      padding-bottom: 10px;
+    }
+    h4{
+      font-weight: 700;
+      letter-spacing: .5px;
+      font-size: 24px;
+      line-height: 24px;
+      color:  $color-main-nissan;
+      padding-bottom: 10px;
+      text-transform:  uppercase;
+    }
+    ul{
+      li{
+        width:  33.33%;
+        float: left;
+        font-size: 16px;
+        line-height: 25px;
+        color: #7a7a7a;
+      }
+    }
+  }
+}

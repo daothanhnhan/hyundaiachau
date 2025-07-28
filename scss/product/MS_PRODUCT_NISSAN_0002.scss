@@ -1,0 +1,17 @@
+.prices_nissan{
+  display:  block;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 600;
+  text-align: left;
+  margin:  20px 0;
+  .prices_news_nissan{
+    color: $color-main-nissan;
+  }
+  .prices_old_nissan{
+    font-size: 14px;
+    color: #7a7a7a;
+    text-decoration: line-through;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,61 @@
+.gb-taisaochonchungtoi_nissan{
+  background: url("../images/background.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 50px 0;
+  .gb-cacbuocthanhtoan_nissan-title{
+    margin-bottom: 30px;
+    h2{
+      font-size: 36px;
+      font-weight: bold;
+      font-style: italic;
+      font-stretch: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: $color-white;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+      margin-bottom: 0;
+    }
+    img{
+      margin: 0 auto;
+    }
+  }
+  .gb-cacbuocthanhtoan_nissan-item{
+    margin-bottom: 30px;
+    .item-icons{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      float: left;
+      width: 60px;
+      height: 60px;
+      border-radius: 4px;
+      border: solid 1px #fff;
+    }
+    .item-caption{
+      padding-left: 80px;
+      h4{
+        font-size: 18px;
+        font-weight: bold;
+        font-style: italic;
+        font-stretch: normal;
+        line-height: 0.94;
+        margin-bottom: 15px;
+        letter-spacing: normal;
+        text-align: left;
+        color: #fff;
+        text-transform: uppercase;
+      }
+      p{
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 22px;
+        letter-spacing: normal;
+        text-align: left;
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
+}

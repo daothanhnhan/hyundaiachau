@@ -1,0 +1,36 @@
+.gb-other-dangkylaithu{
+    padding-bottom: 50px;
+    .gb-other-dangkylaithu-item{
+        .gb-other-dangkylaithu-img{
+            height: 150px;
+            overflow: hidden;
+            &:hover{
+                a{
+                    img{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            a{
+                img{
+                    width:  100%;
+                    height: auto;
+                    transition:  all 0.5s;
+                }
+            }
+        }
+        h3{
+            a{
+                display:  block;
+                font-size: 14px;
+                line-height: 21px;
+                color: #fff;
+                font-weight: 600;
+                text-transform:  uppercase;
+                text-align: center;
+                padding: 15px 0;
+                background:  $color-main-nissan;
+            }
+        }
+    }
+}

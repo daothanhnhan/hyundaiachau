@@ -1,0 +1,60 @@
+.gb-introducehome_nissan{
+  padding: 50px 0;
+  background: url("../images/bg-detail.png") no-repeat;
+  background-size: cover;
+  background-position: center top;
+  .gb-introducehome_nissan-left{
+    @media screen and (max-width: 991px) {
+      margin-bottom: 30px;
+    }
+    h2{
+      font-size: 36px;
+      font-weight: bold;
+      font-style: italic;
+      font-stretch: normal;
+      line-height: 1.4;
+      letter-spacing: normal;
+      text-align: left;
+      color: #22292d;
+      text-transform: uppercase;
+      span{
+        color: $color-main-nissan;
+        display:  block;
+      }
+    }
+    .gb-divider{
+      border-color: $color-main-nissan;
+      margin: 15px 0;
+    }
+    p{
+      margin: 20px 0;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.86;
+      letter-spacing: normal;
+      text-align: left;
+      color: #666666;
+    }
+    .xemtheme_nissan{
+      display: inline-block;
+      padding: 0 34px;
+      font-size: 14px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 44px;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+      text-transform: uppercase;
+      border-radius: 4px;
+      background-color: $color-main-nissan;
+      border: 1px solid $color-main-nissan;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+    }
+  }
+}

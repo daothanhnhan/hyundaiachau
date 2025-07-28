@@ -1,0 +1,14 @@
+.gb-breadcrumbs_nissan{
+  background: url("../images/bg-detail.png") no-repeat;
+  background-size: cover;
+  height: 300px;
+  background-position: center top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .hero-title-breadcrums_nissan{
+    color: $color-main-nissan;
+    font-size: 40px;
+    text-align: center;
+  }
+}

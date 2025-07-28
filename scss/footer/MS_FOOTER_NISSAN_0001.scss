@@ -1,0 +1,60 @@
+.footer-main-content_nissan{
+  padding: 50px 0;
+  background: url("../images/bg-detail.png") no-repeat;
+  background-size: cover;
+  background-position: center top;
+  hr{
+    border-top: 1px solid $color-main1-nissan;
+  }
+}
+.copyright-area_nissan{
+  p{
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    padding: 15px 0;
+    color: #7a7a7a;
+  }
+}
+.widget-title-footer-nissan{
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.footer-link-nissan{
+  ul{
+    li{
+      border-bottom: 1px dashed #ddd;
+      a{
+        font-size: 14px;
+        line-height: 45px;
+        color: $color-grey;
+      }
+    }
+  }
+}
+.footer-logo-nissan{
+  margin-bottom: 30px;
+  img{
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+.footer-about-nissan{
+  ul{
+    li{
+      font-size: 14px;
+      line-height: 30px;
+      color: red;
+      font-weight:  600;
+      span{
+        color: $color-main-nissan;
+        font-weight: 600;
+        text-transform:  uppercase;
+      }
+    }
+  }
+}
